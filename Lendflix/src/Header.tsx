@@ -7,7 +7,7 @@ function Header (){
   return (
     <header className="header">
     <div className="logo">
-      <img src={"./src/assets/R.png"} alt="Netflix" />
+      <img src={"./src/assets/lendflixlogo.png"} alt="Netflix" className='lendflix-logo'/>
     </div>
     <div className="actions">
       <div className="login-button">
