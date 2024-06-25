@@ -15,7 +15,7 @@ function TextContainer(){
         </div>
         <br/>
         <div className='sign-up-container'>
-        <input type='text' className='sign-up-input' placeholder='Adres e-mail'/>
+        <input type='email' name='email' minlength="5" maxlength="50" className='sign-up-input' placeholder='Adres e-mail'/>
         <br/>
         <button className='sign-up-button'>Rozpocznij {`❯`}</button>
         </div>

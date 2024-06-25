@@ -3,6 +3,7 @@ import Divider from "./Divider";
 import TextContainer from "./TextContainer";
 import * as React from 'react';
 import { FontSizes } from '@fluentui/theme';
+import Footer from "./Footer";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Divider/>
       <TextContainer/>
       <Divider/>
+      <Footer/>
     </>
   )
 }
