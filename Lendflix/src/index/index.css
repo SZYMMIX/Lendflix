@@ -268,3 +268,48 @@ color: hsl(0, 0%, 80%);
 .checkbox:hover{
   border: 1px solid hsl(205, 13%, 100%);
 }
+.forgot-img-background{
+  background-image: url("src/assets/moviesimage2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  
+}
+#forgot-info{
+  color: #faf9f8;
+  font-size: 1.1em;
+  margin-top: 40px;
+  font-weight: normal;
+  width: 90%;
+}
+#forgot-text{
+  margin-top: -100px;
+}
+#forgot-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#forgot-input{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+#forgot-button{
+  font-size: 1.2em;
+  padding: 10px;
+  width: 313px;
+  background-color: #106ebe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+#forgot-button:hover{
+  background-color: hsl(208, 84%, 35%);
+}
+#forgot-button:active{
+  background-color: hsl(208, 84%, 30%);
+}

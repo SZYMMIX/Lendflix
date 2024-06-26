@@ -2,7 +2,10 @@ import { Icon, Text } from '@fluentui/react';
 import { useState } from 'react';
 
 function TextContainer(){
-    const [email, setEmail] = useState("");
+    const [email, setEmail] = useState<string>("");
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
     
     return(
     <div className="img-background">
@@ -18,12 +21,12 @@ function TextContainer(){
         </div>
         <br/>
         <div className='sign-up-container'>
-        <form>
-        <input type='email' name='email' minlength="5" maxlength="50" 
+        <form onSubmit={handleSubmit}>
+        <input type='email' name='email' minLength={5} maxLength={50} 
                className='sign-up-input' placeholder='Adres e-mail' required
                value={email} onChange={(e) => setEmail(e.target.value)}/>
         <br/>
-        <button className='sign-up-button'>Rozpocznij &nbsp; {`❯`}</button>
+        <button className='sign-up-button' type='submit'>Rozpocznij &nbsp; {`❯`}</button>
         </form>     
         </div>
         </div>

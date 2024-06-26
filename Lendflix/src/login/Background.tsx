@@ -4,11 +4,18 @@ import { useState } from 'react';
 
 function Background(){
     
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const handleSubmit = (e) => {
+    interface User {
+        email: string;
+        password: string;
+      }
 
-    }
+    const [email, setEmail] = useState<string>("");
+    const [password, setPassword] = useState<string>("");
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const user:User = {email, password};
+        }
+    
 
  return(
     <div className="img-background">
@@ -17,13 +24,13 @@ function Background(){
             <Text className='start-text1' id='login-text'>Zaloguj się</Text>
             <div className='login-inputs'>
             <form onSubmit={handleSubmit}>
-            <input type='email' name='email' minlength='5' maxlength="50" className='log-in-input' 
+            <input type='email' name='email' minLength={5} maxLength={50} className='log-in-input' 
                    id='login-input-email' placeholder='Adres e-mail' required
                    value={email} onChange={(e) => setEmail(e.target.value)}/>
-            <input type='password' name='password' id='login-input-password' 
+            <input type='password' minLength={6} maxLength={60} name='password' id='login-input-password' 
                    className='log-in-input' placeholder='Hasło' required
                    value={password} onChange={(e) => setPassword(e.target.value)}/>
-            <button className='login-button-L'>Zaloguj się</button>
+            <button className='login-button-L' type='submit'>Zaloguj się</button>
             </form>
             <div className='forgot-password-container'>
             <a href='forgot-password.html'>
