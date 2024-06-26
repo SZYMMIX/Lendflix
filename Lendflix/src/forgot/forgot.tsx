@@ -1,11 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import LoginScript from './LoginScript';
+import ForgotScript from './ForgotScript';
 import '../index/index.css'
 
-ReactDOM.createRoot(document.getElementById('login-root')!).render(
+ReactDOM.createRoot(document.getElementById('forgot-root')!).render(
     <React.StrictMode>
-      <LoginScript />
+      <ForgotScript />
     </React.StrictMode>,
   )
-  
