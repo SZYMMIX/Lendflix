@@ -38,10 +38,7 @@ function Background(){
             </a>
             </div>
             <div className='remember-user-container'>
-            <label class="checkbox-container">
             <input type='checkbox' className='checkbox'/>
-            <span class="checkmark"></span>
-            </label>
             <Text className='start-text1' id='remember-user-text'>Zapamiętaj mnie</Text>
             </div>
             <Text className='start-text1' id='new-member-text'>Nie masz jeszcze konta w serwisie Lendflix?</Text>
