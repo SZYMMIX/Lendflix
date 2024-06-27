@@ -49,14 +49,16 @@
   height: 100vh;
   width: auto;
   display: flex;
+  z-index: 5;
   
 }
 .lendflix-logo{
-  scale: 4;
+  scale: 1.1;
   display: flex;
   position: relative;
-  left: 150px;
-  top: 5px;
+  left: 120px;
+  z-index: 10;
+  
 }
 .start-text{
   color: #faf9f8;
@@ -253,7 +255,15 @@ color: hsl(0, 0%, 80%);
 	border-radius: 3px;
   transition: background-color 0.3s ease;
   transition: border-color 0.25s ease;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: 2px;
   
+}
+.checkbox-container {
+  display: inline-block;
+  user-select: none;
 }
 .checkbox:checked {
 	background-color: #bebbb8;
@@ -261,12 +271,21 @@ color: hsl(0, 0%, 80%);
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
   content: '\2714';
 	font-size: 14px;
+  transition: background-color 0.35s ease;
 }
 .checkbox:checked:active{
   background-color: #bebbb8;
 }
 .checkbox:hover{
   border: 1px solid hsl(205, 13%, 100%);
+  cursor: pointer;
+}
+.checkbox-container input:checked ~ .checkmark::before {
+  content: '\2714';
+  position: relative;
+  left: -14px;
+  font-size: 14px;
+  color: #252423;
 }
 .forgot-img-background{
   background-image: url("src/assets/moviesimage2.jpg");
@@ -312,4 +331,86 @@ color: hsl(0, 0%, 80%);
 }
 #forgot-button:active{
   background-color: hsl(208, 84%, 30%);
+}
+#forgot-login-button{
+z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .start-text-container .start-text{
+    font-size: 40px;
+  } 
+  .sign-up-text .start-text1{
+    font-size: 20px;
+  }
+  body{
+    display: flex;
+  }
+  #index-page-sign-up-button{
+    width: 200px;
+  }
+  .smaller-screens-container-index{
+    background-color: rgba(0, 0, 0, 0.403);
+  }
+  .forgot-img-background{
+    display: flex;
+  background-position: 0px;
+  }
+  #index-header{
+    display: flex;
+  }
+  #header-login-button{
+    left: -40px;
+  }
+  .lendflix-logo{
+    left: 40px;
+  }
+  #forgot-login-button{
+    left: -40px;
+  }
+}
+@media (max-width: 480px) {
+  .start-text-container .start-text{
+    font-size: 40px;
+  } 
+  .sign-up-text .start-text1{
+    font-size: 20px;
+  }
+  body{
+    display: flex;
+  }
+  #index-page-sign-up-button{
+    width: 200px;
+  }
+  .smaller-screens-container-index{
+    background-color: rgba(0, 0, 0, 0.403);
+  }
+  #background-img-index{
+  display: flex;
+  background-position: -500px;
+  }
+  #start-text-container-index{
+    background-color: rgba(0, 0, 0, 0.303);
+    width: 290px;
+    height: 300px;
+    margin-bottom: 100px;
+  }
+  #login-img-background{
+    display: flex;
+  background-position: -500px;
+  }
+  .forgot-img-background{
+    display: flex;
+  background-position: 0px;
+  }
+  #header-login-button{
+    margin-left: 20px;
+    width: 150px;
+    left: -40px;
+  }
+
+  .lendflix-logo{
+    left: 20px;
+  }
+  
 }
