@@ -8,9 +8,14 @@ function RBackground(){
 
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
-    const handleSubmit = (e) => {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setIsSubmitting(true);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
         const user:User = {email, password};
+        setIsSubmitting(false);
+        console.log(user);
         }
     
     return(
@@ -26,7 +31,7 @@ function RBackground(){
             <input type='password' minLength={6} maxLength={60} name='password' id='register-input-password' 
                    className='register-input' placeholder='Hasło' required
                    value={password} onChange={(e) => setPassword(e.target.value)}/>
-            <button className='register-button-R' type='submit'>Zarejestruj się</button>
+            <button className='register-button-R' type='submit' disabled={isSubmitting}>Zarejestruj się</button>
             </form>
             <div className='forgot-password-container'>
             </div>
