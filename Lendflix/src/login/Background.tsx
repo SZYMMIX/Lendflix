@@ -38,12 +38,16 @@ function Background(){
             </a>
             </div>
             <div className='remember-user-container'>
-            <input type='checkbox' className='checkbox'/>
+                <label className='checkbox' for="checkboxInput">
+                <input type='checkbox' className='checkbox-input' id='checkboxInput'/>
+                <div className='checkbox-box'></div>
+                </label>
+            
             <Text className='start-text1' id='remember-user-text'>Zapamiętaj mnie</Text>
             </div>
             <Text className='start-text1' id='new-member-text'>Nie masz jeszcze konta w serwisie Lendflix?</Text>
             <div className='register-container-L'>
-            <a href='index.html'>
+            <a href='register-page.html'>
             <Text className='register-text-L'>Zarejestruj się.</Text>
             </a>
             </div>

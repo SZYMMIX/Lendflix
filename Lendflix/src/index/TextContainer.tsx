@@ -27,7 +27,10 @@ function TextContainer(){
                className='sign-up-input' placeholder='Adres e-mail' required
                value={email} onChange={(e) => setEmail(e.target.value)}/>
         <br/>
+        
         <button className='sign-up-button' id='index-page-sign-up-button' type='submit'>Rozpocznij &nbsp; {`❯`}</button>
+        
+        
         </form>     
         </div>
         </div>
