@@ -5,8 +5,10 @@ function Profile(props){
 return(
     <>
     <div className="account-card">
-        <img src="../assets/default-img.jfif"/>
-    <Text >{props.name}</Text>
+        <a href="./menu.html">
+        <img src={`/src/assets/default-img-${props.imageId}.jpg`} className="account-image"/>
+        </a>
+    <Text className="profile-text">{props.name}</Text>
     </div>
     </>
 

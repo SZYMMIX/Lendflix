@@ -67,7 +67,7 @@ body{
   position: relative;
   left: 120px;
   z-index: 10;
-  
+  user-select: none;
 }
 .start-text{
   color: #faf9f8;
@@ -464,18 +464,19 @@ z-index: 10;
 .accounts-background{
   background-image: radial-gradient(#3b3a39, black);
   height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .account-card{
-  width: 100px;
-  background-color: #605e5c;
+  width: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
   display: inline-block;
   margin: 10px;
   padding: 10px 15px;
-  border: black solid 2px;
 }
 #accounts-text{
   width: 100%;
@@ -492,9 +493,138 @@ z-index: 10;
   gap: 10px;
   position: relative;
   margin-top: 0;
+  top: 250px;
+  text-align: center;
+}
+.account-image{
+  width: 160px;
+  height: 160px;
+  margin-bottom: 5px;
+  transition: scale 0.5s ease, border 0.5s ease;
+  border: rgba(0, 0, 0, 0) solid 2px;
+}
+.account-image:hover{
+  scale: 1.1;
+  border: white solid 2px;
+}
+.profile-text{
+  color: white;
+  font-size: 1.5em;
+}
+#add-icon{
+  scale: 3;
+  color: white;
+  transition: scale 0.3s ease;
+}
+#add-icon:hover{
+  scale: 3.25;
+}
+#icon-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   top: 300px;
+  user-select: none;
+}
+.menu-navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #201f1e;
+  width: 96.3vw;
+  margin: 0;
+}
+.nav-options {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+
+.notification-bell{
+  scale: 1.5;
+  margin-left: 15px;
+  color: #edebe9;
+  transition: color 0.3s ease;
+  user-select: none;
+} 
+.notification-bell:hover{
+  color: hsl(30, 10%, 78%);
+}
+.notification-bell:active{
+  color: hsl(30, 10%, 60%);
+}
+.profile-picture {
+  width: 50px;
+  height: auto;
+  margin-left: 30px;
+  user-select: none;
+}
+#unfold-icon{
+  scale: 0.7;
+  color: #f3f2f1;
+  user-select: none;
+}
+.nav-options span{
+  position: relative;
+  left: 75px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-text-options{
+  font-size: 0.9em;
+  color: white;
+  transition: color 0.3s ease;
+  user-select: none;
+  z-index: 11;
+}
+.nav-text-options:hover{
+  color: hsl(0, 0%, 75%);
+}
+#search-icon{
+  scale: 1.3;
+  color: #f3f2f1;
+  user-select: none;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+  
+}
+#search-icon:hover{
+  color: hsl(30, 8%, 85%);
+}
+#search-icon:active{
+  color: hsl(30, 8%, 75%);
+}
+.search-bar {
+  padding: 5px;
+  font-size: 1em;
+  margin-right: 15px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  user-select: none;
+  background-color: hsla(30, 3%, 24%, 0.4);
+border-radius: 5px;
+padding: 5px;
+font-size: 1em;
+color: white;
+}
+.search-vis{
+  opacity: 1;
+  user-select: text;
+}
 
 
 
