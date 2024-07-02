@@ -16,7 +16,7 @@ function MenuNavigation() {
         </div>
         <div className="nav-options">
           <span className="profile-text">
-            <Text className="nav-text-options">Home</Text>
+            <Text className="nav-text-options">Strona główna</Text>
           </span>
           <span className="profile-text">
             <Text className="nav-text-options">Seriale</Text>

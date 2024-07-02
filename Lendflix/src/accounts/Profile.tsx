@@ -3,7 +3,9 @@ import { Icon, Text } from '@fluentui/react';
 
 function Profile({ name, imageId, isEditing }){
 const [isHovered, setIsHovered] = useState(false);
+function changeProfile():void{
 
+}
 return(
     <>
     <div className={`account-card ${isEditing ? 'editing' : ''}`}>
@@ -16,7 +18,7 @@ return(
         (<img src={`/src/assets/default-img-${imageId}.jpg`} 
             alt={name} className={`account-image ${isHovered ? "darker-image" : ""}`}/>)}
         {isEditing && isHovered && (
-        <Icon iconName="Edit" id="edit-icon"/>
+        <Icon iconName="Edit" id="edit-icon" onClick={changeProfile}/>
       )}
     <Text className="profile-text">{name}</Text>
     

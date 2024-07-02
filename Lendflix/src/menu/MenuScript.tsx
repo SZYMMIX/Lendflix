@@ -1,5 +1,7 @@
 import MenuNavigation from "./MenuNavigation";
 import Divider from "../index/Divider";
+import Footer from "../index/Footer";
+import Section1 from "./Section1";
 
 
 function MenuScript(){
@@ -7,6 +9,9 @@ function MenuScript(){
         <>
         <MenuNavigation/>
         <Divider/>
+        <Section1/>
+        <Divider/>
+        <Footer/>
         </>
     
     );
