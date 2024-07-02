@@ -36,7 +36,10 @@ function MenuNavigation() {
         />
         <Icon iconName="Search" id="search-icon" onClick={showSearchBar} />
         <i className="fas fa-bell notification-bell" />
-        <span>
+        <span id='notifications-count-container'>
+        <Text id='notifications-count'>9</Text>
+        </span>
+        <span id='profile-unfold'>
           <img src={"./src/assets/default-img-1.jpg"} alt="Profile" className="profile-picture" />
           <Icon iconName="TriangleDown12" id="unfold-icon" />
         </span>

@@ -216,6 +216,27 @@ color: white;
 a{
   text-decoration: none
 }
+#github-icon{
+  margin-left: 15px;
+  width: 25px;
+  height: auto;
+  user-select: none;
+}
+#linkedin-icon{
+  color: #0a66c2;
+  background-color: white;
+  width: 15px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  scale: 1.3;
+  user-select: none;
+}
+#linkedin-link{
+  text-decoration: none;
+}
 
 a:hover{
   text-decoration: underline;
@@ -477,6 +498,7 @@ z-index: 10;
   display: inline-block;
   margin: 10px;
   padding: 10px 15px;
+  position: relative;
 }
 #accounts-text{
   width: 100%;
@@ -500,29 +522,46 @@ z-index: 10;
   width: 160px;
   height: 160px;
   margin-bottom: 5px;
-  transition: scale 0.5s ease, border 0.5s ease;
+  transition: scale 0.5s ease, border 0.5s ease, filter 0.4s ease;
   border: rgba(0, 0, 0, 0) solid 2px;
 }
-.account-image:hover{
+.account-card:not(.editing) .account-image:hover {
   scale: 1.1;
   border: white solid 2px;
 }
 .profile-text{
   color: white;
   font-size: 1.5em;
+  text-align: center;
 }
 #add-icon{
   scale: 3;
   color: white;
   transition: scale 0.3s ease;
 }
+#edit-icon{
+  scale: 2.4;
+  color: white;
+  transition: scale 0.3s ease;
+  position: absolute;
+  top: 45%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+  
+}
+#edit-icon:hover{
+  scale: 2.6;
+}
 #add-icon:hover{
   scale: 3.25;
 }
-#icon-container{
+
+#edit-profile-container{
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 60px;
   position: relative;
   top: 300px;
   user-select: none;
@@ -569,7 +608,7 @@ z-index: 10;
 .profile-picture {
   width: 50px;
   height: auto;
-  margin-left: 30px;
+  margin-left: 20px;
   user-select: none;
 }
 #unfold-icon{
@@ -593,6 +632,9 @@ z-index: 10;
 }
 .nav-text-options:hover{
   color: hsl(0, 0%, 75%);
+}
+.nav-text-options:active{
+  color: hsl(0, 0%, 65%);
 }
 #search-icon{
   scale: 1.3;
@@ -625,6 +667,58 @@ color: white;
   opacity: 1;
   user-select: text;
 }
+#notifications-count-container{
+  position: relative;
+  bottom: 10px;
+  right: 5px;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#notifications-count{
+  color: hsl(0, 0%, 95%);
+  font-size: 0.85em;
+  user-select: none;
+}
+#edit-profile-button{
+  box-sizing: border-box;
+  border: #bebbb8 solid 2px;
+  border-radius: 5px;
+  color: #bebbb8;
+  background-color: #292827;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.5em;
+  width: 180px;
+  transition: scale 0.4s ease;
+}
+#edit-profile-button:hover{
+  scale: 1.1;
+}
+#finished-button{
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  color: #1b1a19;
+  background-color: #faf9f8;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.5em;
+  width: 120px;
+  transition: scale 0.4s ease;
+  font-weight: bold;
+}
+#finished-button:hover{
+  scale: 1.1;
+}
+.darker-image{
+  filter: brightness(60%);
+}
+
 
 
 

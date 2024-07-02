@@ -2,22 +2,43 @@ import Profile from "./Profile";
 import { useState } from "react";
 import { Icon, Text } from '@fluentui/react';
 function ABackground(){
+  /*<Icon iconName="CircleAddition" id="add-icon"/>
+      
+      */
+     const editButton: HTMLElement = document.getElementById("edit-profile-button");
+     const finishedButton: HTMLElement = document.getElementById("finished-button");
+     const [isEditing, setIsEditing] = useState(false);
+     const profiles: {name:string; imageId:string}[] = [
+                            {name:"User 1", imageId:"1"},
+                            {name:"User 2", imageId:"2"},
+                            {name:"User 3", imageId:"3"},
+                            {name:"User 4", imageId:"4"},
+                            {name:"User 5", imageId:"1"},
+                            {name:"User 6", imageId:"2"}                          
+                          ];
+     const profilesList = profiles.map(profile => <Profile name={profile.name}
+                                       imageId={profile.imageId} isEditing={isEditing}/>)
+     function EditProfile():void{
+      setIsEditing(true);
+     }
+     function FinishedProfile():void{
+      setIsEditing(false);
+     }
 return(
 <div className="accounts-background">
     <div className="account-text-container">
     <Text className='start-text1' id='accounts-text'>Kto ogląda Lendflix?</Text>
     </div>
     <div className="profiles-container">
-        <Profile name="User 1" imageId="1"/>
-        <Profile name="User 2" imageId="2"/>
-        <Profile name="User 3" imageId="3"/>
-        <Profile name="User 4" imageId="4"/>
-        <Profile name="User 5" imageId="1"/>
-        <Profile name="User 6" imageId="2"/>
-        
+        {profilesList}      
       </div>
-      <div id="icon-container">
-      <Icon iconName="CircleAddition" id="add-icon"/>
+      <div id="edit-profile-container">
+        {!isEditing ? (<button id="edit-profile-button" 
+                      onClick={EditProfile}>Edytuj profil</button>):
+                      (<button id="finished-button"  
+                      onClick={FinishedProfile}>Gotowe</button>)}
+      
+      
       </div>
       
 </div>
