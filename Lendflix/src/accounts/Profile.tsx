@@ -5,9 +5,6 @@ import Edit from "./Edit";
 
 function Profile({ name, imageId, isEditing }){
 const [isHovered, setIsHovered] = useState(false);
-function changeProfile():void{
-
-}
 return(
     <>
     <div className={`account-card ${isEditing ? 'editing' : ''}`}>
@@ -21,7 +18,7 @@ return(
             alt={name} className={`account-image ${isHovered ? "darker-image" : ""}`}/>)}
         {isEditing && isHovered && (
             <a href="edit-account.html">
-            <Icon iconName="Edit" id="edit-icon" onClick={changeProfile}/>
+            <Icon iconName="Edit" id="edit-icon" />
             </a>           
       )}
     <Text className="profile-text">{name}</Text>

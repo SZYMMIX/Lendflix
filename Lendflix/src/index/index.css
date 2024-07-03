@@ -612,6 +612,7 @@ z-index: 10;
   scale: 0.7;
   color: #f3f2f1;
   user-select: none;
+  transition: transform 0.2s ease;
 }
 .nav-options span{
   position: relative;
@@ -799,6 +800,7 @@ overflow: hidden;
   align-items:flex-start;
   height: 27%;
   width: 90%;
+  margin-bottom: 10px;
   
 }
 #edit-image-title{
@@ -827,7 +829,127 @@ font-size: 1.4em;
 .img-clicked{
   border: white solid 2px;
 }
-
+#edit-page-input-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+#edit-input{
+  border: #a19f9d solid 1px;
+  scale: 1.2;
+}
+#save-edit-changes-container{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#delete-cancel-container{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+.edit-button{
+  background-color: hsla(0, 0%, 0%, 0);
+  border: #d2d0ce solid 2px;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  color: #d2d0ce; 
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 24px;
+}
+.edit-button:hover {
+ border-color: #a19f9d;
+ color: #a19f9d; 
+}
+.edit-button:active {
+  border-color: #797775;
+  color: #797775; 
+}
+#edit-button-1{
+width: 35%;
+}
+#edit-button-2{
+  width: 150px;
+}
+#edit-button-3{
+  width: 30%;
+}
+.hidden-div{
+  background-color: #f3f2f1;
+  width: 190px;
+  position: absolute;
+  right: 20px;
+  top: 72px;
+  display: flex;
+  flex-direction: column;
+}
+.unfold-profiles-list-item{
+  margin: 0;
+  padding: 5px;
+  font-size: 1.3em;
+  width: 90%;
+  display: flex;
+  justify-content: left;
+  margin-left: 10px;
+  align-items: center;
+}
+.hidden-div ul{
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+  align-items: flex-start;
+}
+.rotate180{
+  transform: rotate(180deg);
+}
+#profile-unfold img:hover{
+cursor: pointer;
+}
+#unfold-icon:hover{
+  cursor: pointer;
+}
+.menu-profile-hidden-div-image{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.unfold-profiles-icon{
+  color: black;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+.hidden-div:hover{
+  cursor: pointer;
+}
+#unfold-profiles-edit-last-anchor{
+  margin-bottom: 7px;
+}
+.blablabla{
+text-decoration: none;
+}
+.unfold-profiles-manage-text:hover{
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+.unfold-profiles-username-text:hover{
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+#unfold-li1{
+  margin-top: 7px;
+}
+.hidden-div ul li a{
+  text-decoration: none;
+}
 
 
 
