@@ -1,12 +1,11 @@
 import Profile from "./Profile";
 import { useState } from "react";
 import { Icon, Text } from '@fluentui/react';
+
 function ABackground(){
   /*<Icon iconName="CircleAddition" id="add-icon"/>
       
       */
-     const editButton: HTMLElement = document.getElementById("edit-profile-button");
-     const finishedButton: HTMLElement = document.getElementById("finished-button");
      const [isEditing, setIsEditing] = useState(false);
      const profiles: {name:string; imageId:string}[] = [
                             {name:"User 1", imageId:"1"},

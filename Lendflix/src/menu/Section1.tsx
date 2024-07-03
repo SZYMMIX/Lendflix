@@ -8,11 +8,12 @@ function Section1(){
     <Text className='start-text1' id="popular-movies">Popularne na Lendflix</Text>
     <div className="movies-section">
     <MovieTile movieName={'Joker'}/>
-    <MovieTile movieName={'Bohemian'}/>
+    <MovieTile movieName={'FightClub'}/>
     <MovieTile movieName={'Us'}/>
     <MovieTile movieName={'Aladdin'}/>
     <MovieTile movieName={'TheSuperMarioBros'}/>
     <MovieTile movieName={'Halloween'}/>
+    <MovieTile movieName={'JohnWick2'}/>
     </div>
     <Text className='start-text1' id="new-movies">Nowość</Text>
     <div className="movies-section">
@@ -20,15 +21,17 @@ function Section1(){
     <MovieTile movieName={'Aladdin'}/>
     <MovieTile movieName={'Bohemian'}/>
     <MovieTile movieName={'Halloween'}/>
+    <MovieTile movieName={'Dune2'}/>
     <MovieTile movieName={'TheSuperMarioBros'}/>
     <MovieTile movieName={'Joker'}/>
     
     </div>
     <Text className='start-text1' id="new-movies">Kultowe filmy</Text>
     <div className="movies-section">
-    <MovieTile movieName={'TheSuperMarioBros'}/>
+    <MovieTile movieName={'Dune2'}/>
+    <MovieTile movieName={'JohnWick2'}/>
     <MovieTile movieName={'Halloween'}/>
-    <MovieTile movieName={'Us'}/>
+    <MovieTile movieName={'FightClub'}/>
     <MovieTile movieName={'Joker'}/>
     <MovieTile movieName={'Aladdin'}/>
     <MovieTile movieName={'Bohemian'}/>

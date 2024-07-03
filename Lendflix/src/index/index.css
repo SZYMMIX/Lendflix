@@ -7,7 +7,7 @@ body{
   align-items: center;
   padding: 20px;
   background-color: #201f1e;
-  width: 96.3vw;
+  width: 97.05vw;
   margin: 0;
   
 }
@@ -45,7 +45,7 @@ body{
 .divider-div{
   background-color: #323130;
   height: 1.5vh;
-  width: 99vw;
+  width: 99.2vw;
   margin: 0;
   padding: 0;
 }
@@ -58,7 +58,7 @@ body{
   width: auto;
   display: flex;
   z-index: 5;
-  width: 99vw;
+  width: 99.2vw;
   
 }
 .lendflix-logo{
@@ -132,7 +132,7 @@ margin-top: 5px;
   align-items: center;
   padding: 20px;
   background-color: #201f1e;
-  width: 96.3vw;
+  width: 97.05vw;
 }
 .login-card{
   background-color: hsla(30, 4%, 4%, 0.9);
@@ -279,11 +279,7 @@ color: hsl(0, 0%, 80%);
 }
 .checkbox{
   -webkit-appearance: none;
- 
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
-	
-  
-  
   font-size: 1em;
   display: inline-flex;
   justify-content: center;
@@ -491,7 +487,7 @@ z-index: 10;
 }
 
 .account-card{
-  width: 160px;
+  width: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -502,6 +498,7 @@ z-index: 10;
 }
 #accounts-text{
   width: 100%;
+  font-size: 2.3em;
 }
 .account-text-container{
  text-align: center;
@@ -519,8 +516,8 @@ z-index: 10;
   text-align: center;
 }
 .account-image{
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   margin-bottom: 5px;
   transition: scale 0.5s ease, border 0.5s ease, filter 0.4s ease;
   border: rgba(0, 0, 0, 0) solid 2px;
@@ -531,7 +528,7 @@ z-index: 10;
 }
 .profile-text{
   color: white;
-  font-size: 1.5em;
+  font-size: 1.7em;
   text-align: center;
 }
 #add-icon{
@@ -572,7 +569,7 @@ z-index: 10;
   align-items: center;
   padding: 20px;
   background-color: #201f1e;
-  width: 96.3vw;
+  width: 97.05vw;
   margin: 0;
 }
 .nav-options {
@@ -690,10 +687,10 @@ color: white;
   border-radius: 5px;
   color: #bebbb8;
   background-color: #292827;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   font-size: 1.5em;
-  width: 180px;
+  width: 200px;
   transition: scale 0.4s ease;
 }
 #edit-profile-button:hover{
@@ -705,10 +702,10 @@ color: white;
   border-radius: 5px;
   color: #1b1a19;
   background-color: #faf9f8;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 1.5em;
-  width: 120px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 1.7em;
+  width: 150px;
   transition: scale 0.4s ease;
   font-weight: bold;
 }
@@ -719,7 +716,7 @@ color: white;
   filter: brightness(60%);
 }
 .menu-background{
-  width: 99vw;;
+  width: 99.2vw;;
   background-color: #201f1e;
   margin: 0;
 }
@@ -738,22 +735,22 @@ color: white;
   justify-content: center;
   align-items: center;
   gap: 60px;
-  height: 200px;
+  height: 235px;
 margin-bottom: 40px;
 overflow: hidden;
 }
 .movie-tile-image{
   box-sizing: border-box;
-  width: 120px;
-  height: 170px;
+  width: 150px;
+  height: 200px;
   display: flex;
   border-radius: 4px;
   transition: scale 0.4s ease, filter 0.4s ease;
 }
 .movie-image-container{
   box-sizing: border-box;
-  width: 140px;
-  height: 190px;
+  width: 150px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -770,6 +767,67 @@ overflow: hidden;
   width: 99vw;
   height: 4vh;
 }
+#edit-background{
+  background-image: radial-gradient(#3b3a39, black);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.account-edit-card{
+  background-color: #201f1e;
+  display: flex;
+  flex-direction: column;
+  
+  width: 30%;
+  height: 60%;
+  border-radius: 15px;
+}
+#edit-profile-title{
+  font-size: 2.2em;
+  font-weight: 500;
+}
+.initial-text-container{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: 35px;
+  align-items:flex-start;
+  height: 27%;
+  width: 90%;
+  
+}
+#edit-image-title{
+font-size: 1.4em;
+}
+#edit-images-container{
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.edit-img{
+  box-sizing: border-box;
+  width: 90px;
+  height: 90px;
+  transition: scale 0.4s ease, filter 0.2s ease;
+}
+.edit-img:hover{
+  scale: 1.1;
+}
+.edit-img:active{
+  filter: brightness(90%);
+}
+.img-clicked{
+  border: white solid 2px;
+}
+
 
 
 
