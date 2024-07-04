@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Icon, Text } from '@fluentui/react';
+import { Link } from 'react-router-dom';
 
 function MenuNavigation() {
   const [isSearchVisible, setIsSearchVisible] = useState(false);
@@ -13,17 +14,25 @@ function MenuNavigation() {
     <nav className="menu-navigation">
       <div className="nav-left">
         <div className="logo">
+          <Link to="/menu.html" className='link-navigation-menu'>
           <img src={"./src/assets/lendflixlogo.png"} alt="Netflix" className='lendflix-logo' />
+          </Link>
         </div>
         <div className="nav-options">
           <span className="profile-text">
+          <Link to="/strona-główna" className='link-navigation-menu'>
             <Text className="nav-text-options">Strona główna</Text>
+            </Link>
           </span>
           <span className="profile-text">
+            <Link to="/seriale" className='link-navigation-menu'>
             <Text className="nav-text-options">Seriale</Text>
+            </Link>
           </span>
           <span className="profile-text">
+            <Link to="/filmy" className='link-navigation-menu'>
             <Text className="nav-text-options">Filmy</Text>
+            </Link>
           </span>
         </div>
       </div>
@@ -74,13 +83,17 @@ function MenuNavigation() {
               <Text className='unfold-profiles-manage-text'>Zarządaj profilami</Text>
               </a>
               </li>
-              <li className='unfold-profiles-list-item'>
+              <li >
+              <Link to="/kupione-produkty" className='unfold-profiles-list-item'>
               <Icon iconName="ShoppingCart" className='unfold-profiles-icon' />
-              <Text className='unfold-profiles-username-text'>Moje zakupy</Text>
+              <Text className='unfold-profiles-manage-text'>Moje zakupy</Text>
+              </Link>
               </li>
-              <li className='unfold-profiles-list-item'>
+              <li >
+              <Link to="/konto" className='unfold-profiles-list-item'>
               <Icon iconName="UserOptional" className='unfold-profiles-icon' />
-              <Text className='unfold-profiles-username-text'>Moje dane</Text>
+              <Text className='unfold-profiles-manage-text'>Moje dane</Text>
+              </Link>
               </li>
               <li >
               <a href="index.html" id='unfold-profiles-edit-last-anchor' className='unfold-profiles-list-item'>
