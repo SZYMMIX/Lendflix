@@ -75,7 +75,13 @@ const calculateTranslateX = (index:number) => {
         {movieName:'Bridgerton', movieId:"18"},
         {movieName:'Witcher', movieId:"19"},
         {movieName:'Halloween', movieId:"20"},
-        {movieName:'Dune2', movieId:"21"}                       
+        {movieName:'Dune2', movieId:"21"},
+        {movieName:'TheLastOfUs', movieId:"22"},
+        {movieName:'Bridgerton', movieId:"23"},
+        {movieName:'Witcher', movieId:"24"},
+        {movieName:'Manifest', movieId:"25"},
+        {movieName:'Witcher', movieId:"26"},
+        {movieName:'Manifest', movieId:"27"}                        
       ];
       const movies3: {movieName:string, movieId:string}[] = [
         {movieName:'Dune2', movieId:"1"},
@@ -98,7 +104,13 @@ const calculateTranslateX = (index:number) => {
         {movieName:'Bridgerton', movieId:"18"},
         {movieName:'Witcher', movieId:"19"},
         {movieName:'Halloween', movieId:"20"},
-        {movieName:'Dune2', movieId:"21"}                     
+        {movieName:'Dune2', movieId:"21"},
+        {movieName:'TheLastOfUs', movieId:"22"},
+        {movieName:'Bridgerton', movieId:"23"},
+        {movieName:'Witcher', movieId:"24"},
+        {movieName:'Manifest', movieId:"25"},
+        {movieName:'Witcher', movieId:"26"},
+        {movieName:'Manifest', movieId:"27"}                      
       ];
 const moviesList1 = movies1.map(movie1 => <MovieTile key={movie1.movieId} movieName={movie1.movieName} movieId={movie1.movieId}/>)
 const moviesList2 = movies2.map(movie2 => <MovieTile key={movie2.movieId} movieName={movie2.movieName} movieId={movie2.movieId}/>)
@@ -107,11 +119,7 @@ const moviesList3 = movies3.map(movie3 => <MovieTile key={movie3.movieId} movieN
     <div className="menu-background">
     <br/> <br/>
     <Text className='start-text1' id="popular-movies">Popularne na Lendflix</Text>
-    <div className="movie-tile-progress-container">
-    <MovieTilesProgress/>  
-    <MovieTilesProgress/> 
-    <MovieTilesProgress/>  
-    </div>
+    <MovieTilesProgress currentIndex={movieTileIndex1} totalSlides={3}/>  
     <div className="movies-section-container" onMouseEnter={() => HandleMouseEnter("1")} onMouseLeave={() => HandleMouseLeave("1")}>
     
     <div className="movies-section">
@@ -131,9 +139,7 @@ const moviesList3 = movies3.map(movie3 => <MovieTile key={movie3.movieId} movieN
     </div>
     <Text className='start-text1' id="new-movies">Nowość</Text>
     <div className="movie-tile-progress-container">
-    <MovieTilesProgress/>  
-    <MovieTilesProgress/> 
-    <MovieTilesProgress/>  
+    <MovieTilesProgress currentIndex={movieTileIndex2} totalSlides={3}/>  
     </div>
     <div className="movies-section-container" onMouseEnter={() => HandleMouseEnter("2")} onMouseLeave={() => HandleMouseLeave("2")}>
     <div className="movies-section">
@@ -152,9 +158,7 @@ const moviesList3 = movies3.map(movie3 => <MovieTile key={movie3.movieId} movieN
     </div>
     <Text className='start-text1' id="new-movies">Kultowe filmy</Text>
     <div className="movie-tile-progress-container">
-    <MovieTilesProgress/>  
-    <MovieTilesProgress/> 
-    <MovieTilesProgress/>  
+    <MovieTilesProgress currentIndex={movieTileIndex3} totalSlides={3}/>  
     </div>
     <div className="movies-section-container" onMouseEnter={() => HandleMouseEnter("3")} onMouseLeave={() => HandleMouseLeave("3")}>
     <div className="movies-section">

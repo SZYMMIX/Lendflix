@@ -1024,6 +1024,9 @@ cursor: pointer;
   right: 6%;
   transform: translateY(370%);
 }
+.active{
+  background-color: #a19f9d;
+}
 
 
 
