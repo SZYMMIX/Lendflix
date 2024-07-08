@@ -16,7 +16,6 @@ function MenuScript(){
         <Divider/>
         <Routes>
             <Route path="/" element={<Section1/>}/>
-            <Route path="/menu.html" element={<Section1/>}/>
             <Route path="/kupione-produkty" element={<Bought/>}/>
             <Route path="/konto" element={<Info/>}/>
             <Route path="/filmy" element={<Movies/>}/>

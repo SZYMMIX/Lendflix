@@ -1,7 +1,4 @@
 import * as React from 'react';
-//import {MockData} from './../model/mock-data';
-//import {data} from './../mock.json';
-
 
 function Header (){
   return (
