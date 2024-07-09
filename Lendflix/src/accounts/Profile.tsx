@@ -10,7 +10,7 @@ return(
     <div className={`account-card ${isEditing ? 'editing' : ''}`}>
         <div onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
         {!isEditing ? 
-        (<a href="./menu.html">
+        (<a href="./menu.html#/strona-główna">
         <img src={`/src/assets/default-img-${imageId}.jpg`} alt={name}
          className="account-image"/>
         </a>) : 
