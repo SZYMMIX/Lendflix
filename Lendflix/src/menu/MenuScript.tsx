@@ -5,6 +5,7 @@ import Section1 from "./Section1";
 import Movies from "./Movies";
 import Series from "./Series";
 import { HashRouter as Router, Route, Routes} from "react-router-dom";
+import InfoScript from "../info/InfoScript";
 
 
 function MenuScript(){

@@ -1,9 +1,14 @@
-import InfoHeader from "../info/InfoHeader";
+import ShoppingHeader from "./ShoppingHeader";
+import InfoFooter from "../info/InfoFooter";
 
 function ShoppingScript(){
     return(
         <>
-        <InfoHeader/>
+        <ShoppingHeader/>
+        <div className="shopping-background">
+
+        </div>
+        <InfoFooter/>
         </>
     
     );

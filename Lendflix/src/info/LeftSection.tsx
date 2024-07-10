@@ -1,45 +1,10 @@
 import { Icon, Text } from '@fluentui/react';
 import { Link } from 'react-router-dom';
-import { PaymentFilled, PaymentRegular, PeopleRegular, PeopleFilled} from '@fluentui/react-icons';
+import { PaymentFilled, PaymentRegular, PeopleRegular, PeopleFilled, CartRegular, CartFilled} from '@fluentui/react-icons';
 import { useState } from 'react';
 
-function LeftSection(){
-    const [isActive1, setIsActive1] = useState(true);
-    const [isActive2, setIsActive2] = useState(false);
-    const [isActive3, setIsActive3] = useState(false);
-    const [isActive4, setIsActive4] = useState(false);
-    function ChangeRight1(){
-        if (!isActive1)  setIsActive1(!isActive1);
-        if(isActive2 || isActive3 || isActive4){
-            setIsActive2(false);
-            setIsActive3(false);
-            setIsActive4(false);
-        }
-        }
-        function ChangeRight2(){
-            if (!isActive2)  setIsActive2(!isActive2);
-            if(isActive1 || isActive3 || isActive4){
-                setIsActive1(false);
-                setIsActive3(false);
-                setIsActive4(false);
-            }
-            }
-        function ChangeRight3(){
-            if (!isActive3)  setIsActive3(!isActive3);
-            if(isActive1 || isActive2 || isActive4){
-                setIsActive1(false);
-                setIsActive2(false);
-                setIsActive4(false);
-            }
-                }
-        function ChangeRight4(){
-            if (!isActive4)  setIsActive4(!isActive4);
-            if(isActive1 || isActive2 || isActive3){
-                setIsActive1(false);
-                setIsActive2(false);
-                setIsActive3(false);
-            }
-         }
+function LeftSection({ isActive1, isActive2, isActive3, isActive4, isActive5, ChangeRight1, ChangeRight2, ChangeRight3, ChangeRight4, ChangeRight5}){
+    
     return(
         <div className='left-section-buttons-div'>
          <ul className='left-section-list'>
@@ -74,6 +39,12 @@ function LeftSection(){
             <li >
             {isActive4 ? <PeopleFilled className="left-info-icon" id='profile-people'/> : <PeopleRegular className="left-info-icon" id='profile-people'/>}
               <Text className='info-hidden-div-text' id='go-back'>Profile</Text>
+            </li>
+            </Link>
+            <Link to="/wypożyczenia"  className='left-list-item' onClick={ChangeRight5}>
+            <li >
+            {isActive5 ? <CartFilled className="left-info-icon" id='profile-shop'/> : <CartRegular className="left-info-icon" id='profile-shop'/>}
+              <Text className='info-hidden-div-text' id='go-back'>Moje zakupy</Text>
             </li>
             </Link>
          </ul>

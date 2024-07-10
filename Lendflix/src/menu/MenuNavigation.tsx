@@ -119,13 +119,13 @@ function showNotifications(){
               </a>
               </li>
               <li >
-              <a href='shopping.html' className='unfold-profiles-list-item'>
+              <a href='account-info.html#/wypożyczenia' className='unfold-profiles-list-item'>
               <Icon iconName="ShoppingCart" className='unfold-profiles-icon' />
               <Text className='unfold-profiles-manage-text'>Moje zakupy</Text>
               </a>
               </li>
               <li >
-              <a href='account-info.html' className='unfold-profiles-list-item'>
+              <a href='account-info.html#/moje-konto' className='unfold-profiles-list-item'>
               <Icon iconName="Contact" className='unfold-profiles-icon' />
               <Text className='unfold-profiles-manage-text'>Konto</Text>
               </a>
