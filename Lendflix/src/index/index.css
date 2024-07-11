@@ -1499,6 +1499,55 @@ border-bottom: 1px solid #979593;
 .rules-change-container{
   width: 90%;
 }
+.payment-container{
+  display: flex;
+  width: 52%;
+  height: 800px;
+  justify-content: space-between;
+}
+.payment-background{
+  background-color: hsla(30, 17%, 98%, 0.3);
+  display: flex;
+}
+.payment-back-button-container{
+margin-left: 50px;
+height: 10%;
+display: flex;
+align-items: center;
+}
+.payment-back-button-container a button{
+  padding: 5px 10px;
+  border: none;
+  background-color: hsla(0, 0%, 100%, 10);
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.payment-back-button-container a:hover{
+  text-decoration: none;
+}
+.payment-back-button-container a button:hover{
+  background-color: #edebe9;
+}
+.method-payment-container{
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.back-btn-text{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.back-to-account-icon{
+  margin-right: 10px;
+  scale: 1.2;
+  font-weight: 600;
+  position: relative;
+  top: 1px;
+}
 
 
 

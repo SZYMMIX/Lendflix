@@ -5,7 +5,7 @@ function PaymentScript(){
     return(
         <>
         <ChangeHeader/>
-        <div className="change-background">
+        <div className="payment-background">
             <PaymentBackground/>
         </div>
         <InfoFooter/>
