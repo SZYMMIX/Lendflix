@@ -20,7 +20,7 @@ function showNotifications(){
   return (
     <nav className="menu-navigation">
       <div className="nav-left">
-        <div className="logo">
+        <div className="logo-container">
           <Link to="/strona-główna" className='link-navigation-menu'>
           <img src={"./src/assets/lendflixlogo.png"} alt="Netflix" className='lendflix-logo' />
           </Link>
@@ -119,7 +119,7 @@ function showNotifications(){
               </a>
               </li>
               <li >
-              <a href='account-info.html#/wypożyczenia' className='unfold-profiles-list-item'>
+              <a href='account-info.html#/moje-konto' className='unfold-profiles-list-item'>
               <Icon iconName="ShoppingCart" className='unfold-profiles-icon' />
               <Text className='unfold-profiles-manage-text'>Moje zakupy</Text>
               </a>

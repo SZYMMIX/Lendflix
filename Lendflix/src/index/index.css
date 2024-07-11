@@ -11,7 +11,7 @@ body{
   
 }
 
-.logo img {
+.logo-container img {
   height: 40px;
   margin-top: 0px;
 }
@@ -61,13 +61,17 @@ body{
   
 }
 .lendflix-logo{
-  scale: 1.1;
   display: flex;
-  position: relative;
-  left: 120px;
   z-index: 10;
   user-select: none;
 }
+.logo-container{
+  scale: 1.1;
+  position: relative;
+  left: 120px;
+  z-index: 13;
+}
+
 .start-text{
   color: #faf9f8;
   font-weight: bold;
@@ -1234,10 +1238,6 @@ list-style-type:none;
   background-color: hsla(30, 17%, 98%, 0.3);
   height: 900px;
 }
-.shopping-background{
-  background-color: hsla(30, 17%, 98%, 0.3);
-  height: 800px;
-}
 #first-left-list-item{
   margin-bottom: 25px;
 }
@@ -1414,6 +1414,92 @@ margin-right: 15px;
   justify-content: space-between;
   align-items: center;
 }
+.lendflix-info-logo{
+  display: flex;
+  z-index: 10;
+  user-select: none;
+}
+.info-logo-container img{
+  height: 40px;
+}
+.info-logo-container{
+  scale: 1.1;
+  position: relative;
+  left: 235px;
+}
+.change-background-container{
+  width: 50%;
+  display: flex;
+  height: 600px;
+  margin: 20px 0px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.change-background{
+  background-color: hsla(30, 17%, 98%, 0.3);
+  display: flex;
+  justify-content: center;
+}
+.change-plan-title-text{
+  font-size: 2.5em;
+  font-weight: 400;
+}
+.plan-options-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.plan-options-container input{
+  -webkit-appearance: none;
+}
+.change-plan-buttons{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.change-plan-btn{
+  padding: 5px 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.change-plan-btn-text{
+  font-size: 1.3em;
+}
+#change-plan-back-btn{
+background-color: hsl(30, 6%, 87%);
+border-bottom: 1px solid #979593;
+}
+#change-plan-back-btn:hover{
+  background-color: hsl(30, 6%, 89%);
+  border-bottom: 1px solid hsl(30, 2%, 64%);
+}
+#change-plan-back-btn:active{
+  background-color: hsl(30, 6%, 84%);
+  border-bottom: 1px solid hsl(30, 2%, 55%);
+}
+#change-plan-continue-btn{
+  background-color:  hsl(206, 90%, 47%);
+}
+#change-plan-continue-btn:hover{
+  background-color:  hsl(206, 90%, 51%);
+}
+#change-plan-continue-btn:active{
+  background-color:  hsl(206, 90%, 45%);
+}
+#plan1{
+  color: black;
+}
+#plan2{
+  color: white;
+}
+.rules-change-container{
+  width: 90%;
+}
+
 
 
 

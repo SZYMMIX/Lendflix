@@ -10,7 +10,7 @@ function Profiles(){
         <Text className="info-right-text">Ustawienia profilu</Text>
         <div className="right-info-options-container">
         <ul className="right-info-default-list">
-            <a className="right-info-default-link">
+            <a className="right-info-default-link" href="settings.html">
             <li>
                 <span>
             <img src="/src/assets/default-img-1.jpg" className='info-profiles-image'/>
@@ -20,7 +20,7 @@ function Profiles(){
             </li>
             </a>
             <div className="right-info-line"></div>
-            <a className="right-info-default-link">
+            <a className="right-info-default-link" href="settings.html">
             <li>
             <span>
             <img src="/src/assets/default-img-2.jpg" className='info-profiles-image'/>
@@ -30,7 +30,7 @@ function Profiles(){
             </li>
             </a>
             <div className="right-info-line"></div>
-            <a className="right-info-default-link">
+            <a className="right-info-default-link" href="settings.html">
             <li>
             <span>
             <img src="/src/assets/default-img-3.jpg" className='info-profiles-image'/>
@@ -40,7 +40,7 @@ function Profiles(){
             </li>
             </a>
             <div className="right-info-line"></div>
-            <a className="right-info-default-link">
+            <a className="right-info-default-link" href="settings.html">
             <li>
             <span>
             <img src="/src/assets/default-img-4.jpg" className='info-profiles-image'/>
@@ -50,7 +50,7 @@ function Profiles(){
             </li>
             </a>
             <div className="right-info-line"></div>
-            <a className="right-info-default-link">
+            <a className="right-info-default-link" href="settings.html">
             <li>
             <span>
             <img src="/src/assets/default-img-1.jpg" className='info-profiles-image'/>
@@ -60,7 +60,7 @@ function Profiles(){
             </li>
             </a>
             <div className="right-info-line"></div>
-            <a className="right-info-default-link">
+            <a className="right-info-default-link" href="settings.html">
             <li>
             <span>
             <img src="/src/assets/default-img-2.jpg" className='info-profiles-image'/>

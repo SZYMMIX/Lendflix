@@ -14,7 +14,7 @@ function Payment(){
             <Text className="info-right-option-text" id='plan-text'>Rozdzielczość 4K z dźwiękiem 3D, oglądanie bez reklam i nie tylko.</Text>
             </li>
             <div className="right-info-line"></div>
-            <a className="right-info-default-link">
+            <a className="right-info-default-link" href="change-plan.html">
             <li>
             <span>
             <CalendarEditRegular className="info-right-option-icon"/>
@@ -33,7 +33,7 @@ function Payment(){
             <Text className="info-right-option-text" id='plan-text'>28 lipca 2024</Text>
             </li>
             <div className="right-info-line"></div>
-            <a className="right-info-default-link">
+            <a className="right-info-default-link" href="payment-methods.html">
             <li>
             <span>
             <PaymentRegular className="info-right-option-icon"/>
@@ -43,7 +43,7 @@ function Payment(){
             </li>
             </a>
             <div className="right-info-line"></div>
-            <a className="right-info-default-link">
+            <a className="right-info-default-link" href="giftcard.html">
             <li>
             <span>
             <GiftCardRegular className="info-right-option-icon"/>
@@ -53,7 +53,7 @@ function Payment(){
             </li>
             </a>
             <div className="right-info-line"></div>
-            <a className="right-info-default-link">
+            <a className="right-info-default-link" href="billing.html">
             <li>
             <span>
             <HistoryRegular className="info-right-option-icon"/>

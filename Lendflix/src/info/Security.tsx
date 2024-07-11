@@ -9,7 +9,7 @@ function Security(){
         <Text className="info-right-text">Szczegóły konta</Text>
         <div className="right-info-options-container">
         <ul className="right-info-default-list">
-            <a className="right-info-default-link">
+            <a className="right-info-default-link" href="password.html">
             <li>
             <span>
             <LockClosedRegular className="info-right-option-icon"/>
@@ -19,7 +19,7 @@ function Security(){
             </li>
             </a>
             <div className="right-info-line"></div>
-            <a className="right-info-default-link">
+            <a className="right-info-default-link" href="verify.html">
             <li>
             <span>
             <MailRegular className="info-right-option-icon"/>
@@ -29,7 +29,7 @@ function Security(){
             </li>
             </a>
             <div className="right-info-line"></div>
-            <a className="right-info-default-link">
+            <a className="right-info-default-link" href="verify.html">
             <li>
             <span>
             <PhoneRegular className="info-right-option-icon"/>

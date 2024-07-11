@@ -29,7 +29,7 @@ function RightDefaultSection({ChangeRight2, ChangeRight4}){
     <Text className="info-right-text">Szybkie łącza</Text>
     <div className="right-info-options-container">
     <ul className="right-info-default-list">
-        <a className="right-info-default-link">
+        <a className="right-info-default-link" href="change-plan.html">
         <li>
         <span>
         <CalendarEditRegular className="info-right-option-icon"/>
@@ -39,7 +39,7 @@ function RightDefaultSection({ChangeRight2, ChangeRight4}){
         </li>
         </a>
         <div className="right-info-line"></div>
-        <a className="right-info-default-link">
+        <a className="right-info-default-link" href="payment-methods.html">
         <li>
         <span>
         <PaymentRegular className="info-right-option-icon"/>
@@ -49,7 +49,7 @@ function RightDefaultSection({ChangeRight2, ChangeRight4}){
         </li>
         </a>
         <div className="right-info-line"></div>
-        <a className="right-info-default-link">
+        <a className="right-info-default-link" href="password.html">
         <li>
         <span>
         <LockClosedRegular className="info-right-option-icon"/>
@@ -59,7 +59,7 @@ function RightDefaultSection({ChangeRight2, ChangeRight4}){
         </li>
         </a>
         <div className="right-info-line"></div>
-        <a className="right-info-default-link">
+        <a className="right-info-default-link" href="settings.html">
         <li>
         <span>
         <Icon iconName="Settings" className="info-right-option-icon-smaller"/>

@@ -1,9 +1,7 @@
 import { Icon, Text } from '@fluentui/react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import LeftSection from './LeftSection';
-
-function InfoHeader ({ ChangeRight4, ChangeRight1}){
+function ChangeHeader (){
     const [isAccountImageClicked, setIsAccountImageClicked] = useState(false);
     function handleInfoButtonClick(){
     setIsAccountImageClicked(!isAccountImageClicked);
@@ -30,16 +28,10 @@ function InfoHeader ({ ChangeRight4, ChangeRight1}){
               </a>
               </li>
               <li className='unfold-profiles-list-item' >
-              <Link to="/moje-konto" onClick={ChangeRight1}>
+              <a href='account-info.html#/moje-konto'>
               <Icon iconName="Contact" className="unfold-info-icon"/>
               <Text className='info-hidden-div-text'>Konto</Text>
-              </Link>
-              </li>
-              <li className="unfold-profiles-list-item">
-              <Link to="/profile" onClick={ChangeRight4}>
-              <Icon iconName="Edit" className='unfold-info-icon' />
-              <Text className='info-hidden-div-text'>Zarządaj profilami</Text>
-              </Link>
+              </a>
               </li>
               <li className='unfold-profiles-list-item' id='last-info-item' >
               <a href="accounts-page.html" >
@@ -60,4 +52,4 @@ function InfoHeader ({ ChangeRight4, ChangeRight1}){
     );
   };
   
-  export default InfoHeader;
+  export default ChangeHeader;
