@@ -5,7 +5,7 @@ function PasswordScript(){
     return(
         <>
         <ChangeHeader/>
-        <div className="change-background">
+        <div className="payment-background">
             <PasswordBackground/>
         </div>
         <InfoFooter/>

@@ -5,7 +5,7 @@ function VerifyScript(){
     return(
         <>
         <ChangeHeader/>
-        <div className="change-background">
+        <div className="payment-background">
             <VerifyBackground/>
         </div>
         <InfoFooter/>

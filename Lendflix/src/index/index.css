@@ -1638,18 +1638,22 @@ margin-top: 10%;
   color: hsl(0, 0%, 20%);
 }
 .billing-background-container{
-  background-color: #0a66c227;
+  background-color: #0a66c210;
   width: 50%;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 100px;
 }
 .billing-title{
   font-size: 2.7em;
   font-weight: 500;
 }
-.billing-membership-text{
+.billing-membership-first-text{
   color: #797775;
+}
+.billing-membership-text{
+  font-size: 1em
 }
 .billing-membership-container{
   border: 1px solid hsla(30, 2%, 58%, 0.6);
@@ -1657,13 +1661,140 @@ margin-top: 10%;
   flex-direction: column;
   gap: 10px;
   padding: 13px 10px;
-  margin-top: 5px;
+  margin: 5px 0;
 }
 .billing-membership-container div{
   display: flex;
   flex-direction: column;
   gap: 3px;
-
+}
+.billing-title-text{
+  font-weight: 500;
+}
+.billing-history-container{
+  margin-top: 25px;
+}
+.billing-history-titles{
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+.billing-line{
+    width: 100%;
+    height: 1px;
+    background-color: #d2d0ce;
+    position: relative;
+}
+.payment-page-title-tremendous{
+  font-size: 3em;
+  font-weight: 700;
+}
+.payment-page-title-small{
+font-size: 1.4em;
+font-weight: 400;
+}
+.password-page-inputs{
+display: flex;
+flex-direction: column;
+gap: 45px;
+}
+.password-page-inputs input{
+  width: 92%;
+  height: 30%;
+  padding: 10px 15px;
+  background-color: #edebe9;
+  border: 1px solid hsla(30, 4%, 69%, 0.7);
+  font-size: 1.3em;
+  border-radius: 4px;
+}
+.verify-page-title{
+  font-size: 2.6em;
+  font-weight: 700;
+  text-align: center;
+}
+.verify-container{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 55%;
+  margin-top: 10%;
+  position: relative;
+  left: 100px; 
+  align-items: center;
+  }
+  .verify-page-info-text{
+    font-size: 1.3em;
+  }
+  .verify-options-container{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    padding: 10px 10px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 7px;
+  }
+.verify-option-email-text-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.verify-option-email-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.verify-mail-icon{
+  scale: 2.2;
+  margin-left: 23px;
+  margin-right: 30px;
+  color: hsl(0, 100%, 48%);
+}
+.verify-page-email-text{
+font-size: 1.3em;
+font-weight: 700;
+}
+.verify-page-email{
+font-size: 1em;
+}
+.verify-option-email-span{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.verify-arrow{
+  position: relative;
+  top: 3px;
+  user-select: none;
+  margin-right: 10px;
+}
+.verify-options-container:hover{
+  cursor: pointer;
+}
+.verify-options-line{
+  width: 585px;
+  height: 2px;
+  position: relative;
+  right: 10px;
+  background-color: hsla(30, 4%, 73%, 0.3);
+}
+.verify-shield-icon{
+  scale: 9.6;
+  margin-bottom: 10px;
+  color: hsla(30, 2%, 19%, 0.5);
+}
+.verify-checkmark{
+position: relative;
+bottom: 62px;
+left: 5px;
+scale: 6;
+color: hsl(0, 100%, 45%);
+font-weight: 600;
 }
 
 
