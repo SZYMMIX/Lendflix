@@ -5,7 +5,7 @@ function GiftcardScript(){
     return(
         <>
         <ChangeHeader/>
-        <div className="change-background">
+        <div className="payment-background">
             <GiftcardBackground/>
         </div>
         <InfoFooter/>

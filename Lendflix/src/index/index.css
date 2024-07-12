@@ -1408,6 +1408,7 @@ margin-right: 15px;
 .info-options-arrow{
   display: flex;
   justify-content: flex-end;
+  color: hsl(0, 0%, 20%);
 }
 .test-list{
   display: flex;
@@ -1501,7 +1502,7 @@ border-bottom: 1px solid #979593;
 }
 .payment-container{
   display: flex;
-  width: 52%;
+  width: 61%;
   height: 800px;
   justify-content: space-between;
 }
@@ -1531,11 +1532,12 @@ align-items: center;
   background-color: #edebe9;
 }
 .method-payment-container{
-
+height: 70%;
 display: flex;
-justify-content: center;
-align-items: center;
-
+flex-direction: column;
+gap: 40px;
+width: 35%;
+margin-top: 10%;
 }
 .back-btn-text{
   font-size: 1.2em;
@@ -1548,6 +1550,122 @@ align-items: center;
   position: relative;
   top: 1px;
 }
+.payment-page-title{
+  font-size: 2em;
+}
+.master-card-img{
+  height: 30px;
+  width: auto;
+  border: 1px solid #d2d0ce;
+  padding: 2px 3px;
+  margin-left: 2px;
+}
+.credit-card-texts-info-container{
+  display: flex;
+  flex-direction: column;
+}
+.current-card-container{
+  border: 1px solid hsla(30, 4%, 69%, 0.7);
+  width: 90%;
+  padding: 10px 10px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 7px;
+}
+.current-card-info-conatainer{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.credit-card-text{
+  font-weight: 500;
+}
+.payment-buttons-container{
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.payment-buttons-container button{
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+}
+.payment-buttons-container button:hover{
+  cursor: pointer;
+}
+.payment-buttons-text{
+  font-size: 1.5em;
+}
+#payment-btn-continue{
+  background-color: #c8c6c4;
+}
+#payment-btn-cancel{
+  background-color: hsl(0, 100%, 48%);
+}
+#payment-continue-text{
+  font-weight: 500;
+  color: black;
+}
+#payment-cancel-text{
+  color: #f3f2f1;
+  font-weight: 500;
+}
+.giftcard-texts-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.payment-page-title-bigger{
+  font-size: 3em;
+  font-weight: 500;
+}
+.giftcard-input{
+  padding: 5px 10px;
+  background-color: #edebe9;
+  border: 1px solid hsla(30, 4%, 69%, 0.7);
+  height: 5%;
+  font-size: 1.5em;
+  border-radius: 4px;
+}
+.giftcard-input:active{
+  border: 1px solid hsla(30, 4%, 69%, 0.7);
+}
+.right-info-default-link:active{
+  color: hsl(0, 0%, 20%);
+}
+.billing-background-container{
+  background-color: #0a66c227;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.billing-title{
+  font-size: 2.7em;
+  font-weight: 500;
+}
+.billing-membership-text{
+  color: #797775;
+}
+.billing-membership-container{
+  border: 1px solid hsla(30, 2%, 58%, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 13px 10px;
+  margin-top: 5px;
+}
+.billing-membership-container div{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+}
+
 
 
 
