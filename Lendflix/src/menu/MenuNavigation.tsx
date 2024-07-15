@@ -16,6 +16,15 @@ function showNotifications(){
   setIsBellClicked(!isBellClicked);
   setNotificationsCount(0);
 }
+const currentUserDataList = JSON.parse(localStorage.getItem('currentUser'));
+/*
+function HandleShoppingClick(){
+  localStorage.setItem('isActive5', 'true');
+}
+function HandleAccountClick(){
+  localStorage.setItem('isActive1', 'true')
+}
+  */
 
   return (
     <nav className="menu-navigation">
@@ -85,7 +94,7 @@ function showNotifications(){
           </div>
         }
         <span id='profile-unfold' onMouseEnter={() => setIsProfileHover(true)} onMouseLeave={() => setIsProfileHover(false)}>
-          <img src={"./src/assets/default-img-1.jpg"} alt="Profile" className="profile-picture" />
+          <img src={`./src/assets/default-img-${currentUserDataList[1]}.jpg`} alt="Profile" className="profile-picture" />
           <Icon iconName="TriangleDown12" id="unfold-icon" className={isProfileHover ? "rotate180" : ""}/>
         </span>
         {isProfileHover && <div className="hidden-div" onMouseEnter={() => setIsProfileHover(true)} onMouseLeave={() => setIsProfileHover(false)}>
@@ -119,7 +128,7 @@ function showNotifications(){
               </a>
               </li>
               <li >
-              <a href='account-info.html#/moje-konto' className='unfold-profiles-list-item'>
+              <a href='account-info.html#/wypożyczenia' className='unfold-profiles-list-item'>
               <Icon iconName="ShoppingCart" className='unfold-profiles-icon' />
               <Text className='unfold-profiles-manage-text'>Moje zakupy</Text>
               </a>
@@ -131,7 +140,7 @@ function showNotifications(){
               </a>
               </li>
               <li >
-              <a href="index.html" id='unfold-profiles-edit-last-anchor' className='unfold-profiles-list-item'>
+              <a href="index.html" id='unfold-profiles-edit-last-anchor' className='unfold-profiles-list-item' onClick={() => localStorage.clear()}>
               <Icon iconName="SignOut" className='unfold-profiles-icon' />
               <Text className='unfold-profiles-manage-text'>Wyloguj się</Text>
               </a>

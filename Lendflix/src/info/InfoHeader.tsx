@@ -5,6 +5,7 @@ import LeftSection from './LeftSection';
 
 function InfoHeader ({ ChangeRight4, ChangeRight1}){
     const [isAccountImageClicked, setIsAccountImageClicked] = useState(false);
+    const currentUserDataList = JSON.parse(localStorage.getItem('currentUser'));
     function handleInfoButtonClick(){
     setIsAccountImageClicked(!isAccountImageClicked);
     }
@@ -17,7 +18,7 @@ function InfoHeader ({ ChangeRight4, ChangeRight1}){
       </div>
       <div className="actions" id="info-actions">
         <div className="account-button" id='info-button' onClick={handleInfoButtonClick}>
-          <img src="/src/assets/default-img-1.jpg" className="info-header-img"/>
+          <img src={`/src/assets/default-img-${currentUserDataList[1]}.jpg`} className="info-header-img"/>
           <Icon iconName="TriangleDown12" id="unfold-info-icon" className={isAccountImageClicked ? "rotate180" : ""}/>
         </div>
       </div>
@@ -48,7 +49,7 @@ function InfoHeader ({ ChangeRight4, ChangeRight1}){
               </a>
               </li>
               <li className='unfold-profiles-list-item' id='last-info-item' >
-              <a href="index.html" >
+              <a href="index.html" onClick={() => localStorage.clear()}>
               <Icon iconName="SignOut" className='unfold-info-icon' />
               <Text className='info-hidden-div-text'>Wyloguj się</Text>
               </a>
