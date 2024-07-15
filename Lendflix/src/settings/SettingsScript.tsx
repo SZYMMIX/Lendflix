@@ -5,7 +5,7 @@ function SettingsScript(){
     return(
         <>
         <ChangeHeader/>
-        <div className="change-background">
+        <div className="payment-background">
             <SettingsBackground/>
         </div>
         <InfoFooter/>

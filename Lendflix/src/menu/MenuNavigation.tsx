@@ -16,7 +16,13 @@ function showNotifications(){
   setIsBellClicked(!isBellClicked);
   setNotificationsCount(0);
 }
-const currentUserDataList = JSON.parse(localStorage.getItem('currentUser'));
+
+function HandleAnchorClick(){
+  const currentUser = ['User 1', '1'];
+  localStorage.setItem('currentUser', JSON.stringify(currentUser))
+  currentUserDataList = JSON.parse(localStorage.getItem('currentUser'))
+}
+var currentUserDataList = JSON.parse(localStorage.getItem('currentUser'));
 /*
 function HandleShoppingClick(){
   localStorage.setItem('isActive5', 'true');
@@ -99,27 +105,41 @@ function HandleAccountClick(){
         </span>
         {isProfileHover && <div className="hidden-div" onMouseEnter={() => setIsProfileHover(true)} onMouseLeave={() => setIsProfileHover(false)}>
           <ul>
-            <li className='unfold-profiles-list-item' id='unfold-li1'>
+            <li>
+              <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna" id='unfold-li1' onClick={HandleAnchorClick}>
               <img src="/src/assets/default-img-1.jpg" className='menu-profile-hidden-div-image'/>
-              <Text className='unfold-profiles-username-text'>User1</Text></li>
-            <li className='unfold-profiles-list-item'>
+              <Text className='unfold-profiles-username-text'>User1</Text>
+              </a>
+              </li>
+            <li>
+            <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna">
               <img src="/src/assets/default-img-2.jpg" className='menu-profile-hidden-div-image'/>
-              <Text className='unfold-profiles-username-text'>User2</Text></li>
-            <li className='unfold-profiles-list-item'>
+              <Text className='unfold-profiles-username-text'>User2</Text>
+              </a>
+              </li>
+            <li>
+            <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna">
               <img src="/src/assets/default-img-3.jpg" className='menu-profile-hidden-div-image'/>
               <Text className='unfold-profiles-username-text'>User3</Text>
+              </a>
               </li>
-            <li className='unfold-profiles-list-item'>
+            <li>
+            <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna">
               <img src="/src/assets/default-img-4.jpg" className='menu-profile-hidden-div-image'/>
               <Text className='unfold-profiles-username-text'>User4</Text>
+              </a>
               </li>
-            <li className='unfold-profiles-list-item'>
+            <li>
+            <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna">
               <img src="/src/assets/default-img-1.jpg" className='menu-profile-hidden-div-image'/>
               <Text className='unfold-profiles-username-text'>User5</Text>
+              </a>
               </li>
-            <li className='unfold-profiles-list-item'>
+            <li>
+            <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna">
               <img src="/src/assets/default-img-2.jpg" className='menu-profile-hidden-div-image'/>
               <Text className='unfold-profiles-username-text'>User6</Text>
+              </a>
               </li>
               <li >
               <a href="accounts-page.html" className="unfold-profiles-list-item">
