@@ -46,7 +46,7 @@ function Security(){
 
         </ul>
         </div>
-        <button className='cancel-membership-btn'>
+        <button className='cancel-membership-btn' id='security-page-btn'>
             <Text className="info-right-option-text" id='cancel-membership-text'>Usuń konto</Text>
             </button>
         </div>

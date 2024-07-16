@@ -22,55 +22,65 @@ function SettingsBackground(){
         </div>
         <div className="right-info-options-container">
     <ul className="right-info-default-list" id='options-list'>
-        <a className="right-info-default-link" href="change-plan.html">
+
         <li>
+        <a className="right-info-default-link" href="change-plan.html">
         <span>
         <LockClosedRegular className="info-right-option-icon"/>
         <Text className="info-right-option-text">Blokada profilu</Text>
         </span>
         <Icon iconName='ChevronRightMed' className='info-options-arrow'/>
-        </li>
         </a>
+        </li>
+
         <div className="right-info-line"></div>
-        <a className="right-info-default-link" href="payment-methods.html">
+
         <li>
+        <a className="right-info-default-link" href="payment-methods.html">
         <span>
         <MailRegular className="info-right-option-icon"/>
         <Text className="info-right-option-text">E-mail</Text>
         </span>
         <Icon iconName='ChevronRightMed' className='info-options-arrow'/>
-        </li>
         </a>
+        </li>
+
         <div className="right-info-line"></div>
-        <a className="right-info-default-link" href="password.html">
+
         <li>
+        <a className="right-info-default-link" href="password.html">
         <span>
         <Icon iconName='LocaleLanguage' className="info-right-option-icon-smaller"/>
         <Text className="info-right-option-text">Języki</Text>
         </span>
         <Icon iconName='ChevronRightMed' className='info-options-arrow'/>
-        </li>
         </a>
+        </li>
+
         <div className="right-info-line"></div>
-        <a className="right-info-default-link" href="settings.html">
+
         <li>
+        <a className="right-info-default-link" href="settings.html">
         <span>
         <ErrorCircleRegular className="info-right-option-icon"/>
         <Text className="info-right-option-text">Ograniczenia oglądania</Text>
         </span>
         <Icon iconName='ChevronRightMed' className='info-options-arrow'/>
-        </li>
         </a>
+        </li>
+
         <div className="right-info-line"></div>
-        <a className="right-info-default-link">
+
         <li>
+        <a className="right-info-default-link">
         <span>
         <HistoryRegular className="info-right-option-icon"/>
         <Text className="info-right-option-text">Historia oglądania</Text>
         </span>
         <Icon iconName='ChevronRightMed' className='info-options-arrow'/>
-        </li>
         </a>
+        </li>
+
     </ul>
     </div>
     <button className='cancel-membership-btn' id='delete-account-btn'>

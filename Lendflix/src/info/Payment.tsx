@@ -76,7 +76,7 @@ function Payment(){
 
         </ul>
         </div>
-        <button className='cancel-membership-btn'>
+        <button className='cancel-membership-btn' id='membership-page-btn'>
             <Text className="info-right-option-text" id='cancel-membership-text'>Anuluj członkostwo</Text>
             </button>
         </div>

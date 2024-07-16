@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Icon, Text } from '@fluentui/react';
 import { Link } from 'react-router-dom';
 
@@ -7,6 +7,8 @@ function MenuNavigation() {
   const [isSearchVisible, setIsSearchVisible] = useState(false);
   const [isBellClicked, setIsBellClicked] = useState(false);
   const [isProfileHover, setIsProfileHover] = useState(false);
+  const notificationBoxRef = useRef<HTMLDivElement>(null);
+  const notificationBellRef = useRef<HTMLDivElement>(null);
 
   function showSearchBar() {
     setIsSearchVisible(!isSearchVisible);
@@ -14,7 +16,7 @@ function MenuNavigation() {
 
 function showNotifications(){
   setIsBellClicked(!isBellClicked);
-  setNotificationsCount(0);
+  if(notificationsCount>0) setNotificationsCount(0);
 }
 
 function HandleAnchorClick(){
@@ -23,14 +25,25 @@ function HandleAnchorClick(){
   currentUserDataList = JSON.parse(localStorage.getItem('currentUser'))
 }
 var currentUserDataList = JSON.parse(localStorage.getItem('currentUser'));
-/*
-function HandleShoppingClick(){
-  localStorage.setItem('isActive5', 'true');
-}
-function HandleAccountClick(){
-  localStorage.setItem('isActive1', 'true')
-}
-  */
+
+
+useEffect(() => {
+  function handleClickOutside(event: MouseEvent) {
+    if (notificationBoxRef.current && !notificationBoxRef.current.contains(event.target as Node) && !notificationBellRef.current.contains(event.target as Node)) {
+      setIsBellClicked(false);
+    }
+  }
+
+  if (isBellClicked) {
+    document.addEventListener('mouseup', handleClickOutside);
+  } else {
+    document.removeEventListener('mouseup', handleClickOutside);
+  }
+
+  return () => {
+    document.removeEventListener('mouseup', handleClickOutside);
+  };
+}, [isBellClicked]);
 
   return (
     <nav className="menu-navigation">
@@ -67,14 +80,14 @@ function HandleAccountClick(){
           id='searchBar'
         />
         <Icon iconName="Search" id="search-icon" onClick={showSearchBar} />
-        <i className={`fas fa-bell notification-bell ${notificationsCount == 0 ? "without-notifications" : "with-notifications"}`} onClick={showNotifications}/>
-        {notificationsCount > 0 && <span id='notifications-count-container' onClick={showNotifications} 
+        <i className={`fas fa-bell notification-bell ${notificationsCount == 0 ? "without-notifications" : "with-notifications"}`} onClick={showNotifications} ref={notificationBellRef}/>
+        {notificationsCount > 0 && <span id='notifications-count-container' onClick={showNotifications}  
                                     className={notificationsCount > 9 ? "notifications-count-above-limit" : "notifications-count-below-limit"}>
         <Text id='notifications-count'>{notificationsCount > 9 ? `9+` : notificationsCount}</Text>
         </span>
         }
         
-        {isBellClicked && !isProfileHover && <div className="hidden-div" id='notifications-hidden-div'>
+        {isBellClicked && !isProfileHover && <div ref={notificationBoxRef} className="hidden-div" id='notifications-hidden-div'>
           <div className='notifications-line'>
           </div>
           <ul id='notifications-list'>

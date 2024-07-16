@@ -1835,8 +1835,7 @@ font-weight: 700;
   height: 32px;
 }
 #delete-account-btn{
-  margin-left: 50px;
-  width: 600px;
+  width: 177%;
 }
 #options-list{
   width: 78%;
@@ -1982,6 +1981,12 @@ font-weight: 700;
   font-size: 1em;
   font-weight: 500;
   color: #605e5c;
+}
+#membership-page-btn{
+  width: 91.5%;
+}
+#security-page-btn{
+  width: 91%;
 }
 
 

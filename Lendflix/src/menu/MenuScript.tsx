@@ -9,6 +9,7 @@ import InfoScript from "../info/InfoScript";
 
 
 function MenuScript(){
+    
     return(
         <Router>
         <MenuNavigation/>
