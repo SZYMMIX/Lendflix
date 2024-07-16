@@ -1239,7 +1239,8 @@ list-style-type:none;
 .info-background{
   background-color: hsla(30, 17%, 98%, 0.3);
   display: flex;
-  height: 900px;
+  flex-wrap: wrap;
+  
 }
 #first-left-list-item{
   margin-bottom: 25px;
@@ -1247,12 +1248,13 @@ list-style-type:none;
 .default-right-section-container{
   display: flex;
   width: 50%;
-  height: 720px;
   position: relative;
   left: 230px;
   top: 30px;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 4%;
+  min-height: 600px;
 }
 #info-footer{
   background-color: hsla(0, 0%, 100%, 0.4);
@@ -1318,32 +1320,32 @@ user-select: none;
   position: relative;
   right: 20px;
 }
-.right-info-default-list .right-info-default-link li:hover{
+.right-info-default-list li .right-info-default-link:hover{
 background-color: hsla(30, 10%, 92%, 0.5);
 }
-.right-info-default-list .right-info-default-link li{
-  width: 92%;
+.right-info-default-list li .right-info-default-link{
+  width: 97%;
   border-radius: 5px;
   padding: 10px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.right-info-default-list .right-info-default-link li span{
+.right-info-default-list li .right-info-default-link span{
   display: flex;
   align-items: center;
 }
 .right-info-line{
-  width: 93%;
+  width: 98%;
   height: 1px;
   background-color: #d2d0ce;
   position: relative;
   right: 20px;
 }
-.right-info-default-list .right-info-default-link:first-child{
+.right-info-default-list li:first-child{
   margin-top: 15px;
 }
-.right-info-default-list .right-info-default-link:last-child{
+.right-info-default-list li:last-child{
   margin-bottom: 15px;
 }
 .info-right-option-text{
@@ -1370,7 +1372,7 @@ background-color: hsla(30, 10%, 92%, 0.5);
   padding: 5px 10px;
   display: flex;
   position: relative;
-  right: 20px;
+  right: 25px;
 }
 #text-info-list-item-first{
   margin-top: 15px;
@@ -1383,6 +1385,7 @@ background-color: hsla(30, 10%, 92%, 0.5);
 }
 #plan-text{
   font-weight: 500;
+  color: #323130d0;
 }
 .cancel-membership-btn{
   width: 92%;
@@ -1522,7 +1525,7 @@ align-items: center;
 .payment-back-button-container a button{
   padding: 5px 10px;
   border: none;
-  background-color: hsla(0, 0%, 100%, 10);
+  background-color: hsla(30, 17%, 98%, 0.3);
   display: flex;
   align-items: center;
   border-radius: 3px;
@@ -1699,10 +1702,10 @@ font-weight: 400;
 .password-page-inputs{
 display: flex;
 flex-direction: column;
-gap: 45px;
+gap: 30px;
 }
 .password-page-inputs input{
-  width: 92%;
+  width: 93%;
   height: 30%;
   padding: 10px 15px;
   background-color: #edebe9;
@@ -1838,7 +1841,148 @@ font-weight: 700;
 #options-list{
   width: 78%;
 }
-
+.email-page-title{
+  font-size: 2.08em;
+  font-weight: 700;
+}
+.email-page-title-small{
+  font-size: 1.2em;
+  font-weight: 500;
+  color: black;
+  width: 70%;
+}
+#email-page-box-container{
+  margin-top: 7%;
+}
+.email-change-container{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 60%;
+  margin-top: 8%;
+  }
+  .password-change-container{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 40%;
+    margin-top: 8%;
+    }
+  .phone-page-title{
+    font-size: 2.3em;
+    font-weight: 700;
+  }
+  .phone-page-title-small{
+    font-size: 1.2em;
+  font-weight: 500;
+  color: black;
+  width: 77%;
+  }
+  .phone-container{
+    display: flex;
+    width: 80%;
+    height: 800px;
+    justify-content: space-between;
+  }
+  .phone-buttons-container{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .phone-buttons-container button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    width: 49.8%;
+    margin-left: 12%;
+  }
+  .phone-buttons-container button:hover{
+    cursor: pointer;
+  }
+  .phone-buttons-container a{
+    display: flex;
+   
+  }
+  .phone-buttons-container a:hover{
+    text-decoration: none;
+  }
+  .phone-page-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    }
+    .phone-page-inputs input{
+      width: 46%;
+      height: 50%;
+      padding: 10px 15px;
+      background-color: #edebe9;
+      border: 1px solid hsla(30, 4%, 69%, 0.7);
+      font-size: 1.3em;
+      border-radius: 4px;
+      margin-left: 12%;
+    }
+    .password-container{
+      display: flex;
+      width: 62%;
+      height: 800px;
+      justify-content: space-between;
+    }
+    .email-container{
+      display: flex;
+      width: 82%;
+      height: 800px;
+      justify-content: space-between;
+    }
+    .email-page-inputs{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      }
+      .email-page-inputs input{
+        width: 65%;
+        height: 30%;
+        padding: 10px 15px;
+        background-color: #edebe9;
+        border: 1px solid hsla(30, 4%, 69%, 0.7);
+        font-size: 1.3em;
+        border-radius: 4px;
+      }
+      .email-buttons-container{
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+      }
+      .email-buttons-container button{
+        padding: 10px 15px;
+        border: none;
+        border-radius: 3px;
+        width: 68.6%;
+      }
+      .email-buttons-container button:hover{
+        cursor: pointer;
+      }
+.payment-card-img{
+  height: 15px;
+  width: auto;
+  border: 1px solid #d2d0ce;
+  padding: 2px 3px;
+  margin-right: 8px;
+}
+.credit-card-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 7px;
+  margin-left: 1px;
+  
+}
+.credit-card-info-text{
+  font-size: 1em;
+  font-weight: 500;
+  color: #605e5c;
+}
 
 
 

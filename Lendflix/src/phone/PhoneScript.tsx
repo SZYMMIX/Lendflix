@@ -5,7 +5,7 @@ function PhoneScript(){
     return(
         <>
         <ChangeHeader/>
-        <div className="change-background">
+        <div className="payment-background">
             <PhoneBackground/>
         </div>
         <InfoFooter/>

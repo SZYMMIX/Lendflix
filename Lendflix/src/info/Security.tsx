@@ -9,35 +9,41 @@ function Security(){
         <Text className="info-right-text">Szczegóły konta</Text>
         <div className="right-info-options-container">
         <ul className="right-info-default-list">
-            <a className="right-info-default-link" href="password.html">
+
             <li>
+            <a className="right-info-default-link" href="password.html">
             <span>
             <LockClosedRegular className="info-right-option-icon"/>
             <Text className="info-right-option-text">Hasło</Text>
             </span>
             <Icon iconName='ChevronRightMed' className='info-options-arrow'/>
-            </li>
             </a>
+            </li>
+
             <div className="right-info-line"></div>
-            <a className="right-info-default-link" href="verify.html">
+
             <li>
+            <a className="right-info-default-link" href="email.html">
             <span>
             <MailRegular className="info-right-option-icon"/>
             <Text className="info-right-option-text">E-mail</Text>
             </span>
             <Icon iconName='ChevronRightMed' className='info-options-arrow'/>
-            </li>
             </a>
+            </li>
+
             <div className="right-info-line"></div>
-            <a className="right-info-default-link" href="verify.html">
+
             <li>
+            <a className="right-info-default-link" href="phone.html">
             <span>
             <PhoneRegular className="info-right-option-icon"/>
             <Text className="info-right-option-text">Telefon komórkowy</Text>
             </span>
             <Icon iconName='ChevronRightMed' className='info-options-arrow'/>
-            </li>
             </a>
+            </li>
+
         </ul>
         </div>
         <button className='cancel-membership-btn'>

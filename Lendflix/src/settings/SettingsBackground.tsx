@@ -74,7 +74,7 @@ function SettingsBackground(){
     </ul>
     </div>
     <button className='cancel-membership-btn' id='delete-account-btn'>
-            <Text className="info-right-option-text" id='cancel-membership-text'>Usuń konto</Text>
+            <Text className="info-right-option-text" id='cancel-membership-text'>Usuń profil</Text>
             </button>
         </div>
         </div>

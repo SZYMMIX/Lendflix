@@ -5,7 +5,7 @@ function EmailScript(){
     return(
         <>
         <ChangeHeader/>
-        <div className="change-background">
+        <div className="payment-background">
             <EmailBackground/>
         </div>
         <InfoFooter/>

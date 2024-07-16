@@ -2,7 +2,7 @@ import { Icon, Text } from '@fluentui/react';
 
 function PasswordBackground(){
     return(
-        <div className='payment-container'>
+        <div className='password-container'>
         <div className='payment-back-button-container'>
             <a href='account-info.html#/moje-konto'>
             <button>
@@ -11,7 +11,7 @@ function PasswordBackground(){
             </button>
             </a>
         </div>
-        <div className='method-payment-container'>
+        <div className='password-change-container'>
             <div className='giftcard-texts-container'>
         <Text className='payment-page-title-tremendous'>Zmień hasło</Text>
         <Text className='payment-page-title-small'>Zabezpiecz konto niepowtarzalnym hasłem liczącym co najmniej 6 znaków.</Text>
