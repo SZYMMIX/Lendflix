@@ -1988,6 +1988,85 @@ font-weight: 700;
 #security-page-btn{
   width: 91%;
 }
+#verifyp-input{
+  height: 50%;
+}
+.verifyp-text-img-container{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.verifyp-img{
+  height: 55px;
+  position: relative;
+  left: 90px;
+  bottom: 70px;
+  box-sizing: border-box;
+}
+.pemail-page-title-tremendous{
+  font-size: 2.4em;
+  font-weight: 500;
+}
+.pemail-page-title-small{
+  font-size: 1.3em;
+}
+.pemail-change-container{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 40%;
+  margin-top: 8%;
+  }
+  #pemail-input{
+    height: 50%;
+  }
+  .pemail-img{
+    height: 35px;
+    margin-right: 12px;
+  }
+  .pemail-userdata-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .languages-page-title-tremendous{
+    font-size: 2.3em;
+    font-weight: 600;
+  }
+  .languages-img{
+    height: 35px;
+    margin-left: 10px;
+  }
+  #languages-input{
+    height: 50%;
+  }
+  #lock-title{
+    font-weight: 600;
+  }
+  #restrict-title{
+    font-weight: 600;
+    font-size: 2.7em;
+  }
+  .restrict-img{
+    height: 55px;
+    position: relative;
+    left: 80px;
+    bottom: 70px;
+  }
+  .restrict-page-title-small{
+    font-size: 1.2em;
+  }
+  .restrict-text-img-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 500px;
+  }
+  .lock-page-hidden-text{
+    font-size: 1.6em;
+    font-weight: 600;
+  }
 
 
 

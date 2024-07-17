@@ -1,6 +1,7 @@
 import { Icon, Text } from '@fluentui/react';
 
-function PasswordBackground(){
+function PemailBackground(){
+    const currentUserData = JSON.parse(localStorage.getItem('currentUser'));
     return(
         <div className='password-container'>
         <div className='payment-back-button-container'>
@@ -11,15 +12,17 @@ function PasswordBackground(){
             </button>
             </a>
         </div>
-        <div className='password-change-container'>
+        <div className='pemail-change-container'>
             <div className='giftcard-texts-container'>
-        <Text className='payment-page-title-tremendous'>Zmień hasło</Text>
-        <Text className='payment-page-title-small'>Zabezpiecz konto niepowtarzalnym hasłem liczącym co najmniej 6 znaków.</Text>
+        <Text className='pemail-page-title-tremendous'>Dodaj adres e-mail profilu</Text>
+        <Text className='pemail-page-title-small'>Zaproponujemy Ci coś ciekawego do obejrzenia i poinformujemy o nowych funkcjach, ofertach specjalnych oraz ankietach.</Text>
+        <div className='pemail-userdata-container'>
+        <img src={`/src/assets/default-img-${currentUserData[1]}.jpg`} className="pemail-img"/>
+        <Text className='pemail-page-title-small'>{currentUserData[0]}</Text>
+        </div>
         </div>
         <div className='password-page-inputs'>
-        <input type='password' placeholder='Bieżące hasło' minLength={6} maxLength={60} required/>
-        <input type='password' placeholder='Nowe hasło (6-60 znaków)' minLength={6} maxLength={60} required/>
-        <input type='password' placeholder='Wprowadź ponownie nowe hasło' minLength={6} maxLength={60} required/>
+        <input type='email' id='pemail-input' placeholder='Adres e-mail' minLength={6} maxLength={60} required/>
         </div>
         <div className='payment-buttons-container'>
             <a>
@@ -33,4 +36,4 @@ function PasswordBackground(){
         </div>
     );
 }
-export default PasswordBackground
+export default PemailBackground

@@ -1,6 +1,7 @@
 import { Icon, Text } from '@fluentui/react';
 
-function PasswordBackground(){
+function RestrictionsBackground(){
+    const currentUserData = JSON.parse(localStorage.getItem('currentUser'));
     return(
         <div className='password-container'>
         <div className='payment-back-button-container'>
@@ -13,17 +14,18 @@ function PasswordBackground(){
         </div>
         <div className='password-change-container'>
             <div className='giftcard-texts-container'>
-        <Text className='payment-page-title-tremendous'>Zmień hasło</Text>
-        <Text className='payment-page-title-small'>Zabezpiecz konto niepowtarzalnym hasłem liczącym co najmniej 6 znaków.</Text>
+        <Text className='payment-page-title-tremendous' id='restrict-title'>Ograniczenia oglądania</Text>
+        <div className='restrict-text-img-container'>
+        <Text className='restrict-page-title-small'>Wprowadź hasło do konta, aby edytować profilowe kategorie wiekowe i ograniczenia tytułów dla profilu użytkownika {currentUserData[0]}</Text>
+        <img src={`/src/assets/default-img-${currentUserData[1]}.jpg`} className="restrict-img"/>
+        </div>
         </div>
         <div className='password-page-inputs'>
-        <input type='password' placeholder='Bieżące hasło' minLength={6} maxLength={60} required/>
-        <input type='password' placeholder='Nowe hasło (6-60 znaków)' minLength={6} maxLength={60} required/>
-        <input type='password' placeholder='Wprowadź ponownie nowe hasło' minLength={6} maxLength={60} required/>
+        <input type='password' placeholder='Bieżące hasło' id='verifyp-input' minLength={6} maxLength={60} required/>
         </div>
         <div className='payment-buttons-container'>
             <a>
-            <button id='payment-btn-continue'><Text className='payment-buttons-text' id='payment-continue-text'>Zapisz</Text></button>
+            <button id='payment-btn-continue'><Text className='payment-buttons-text' id='payment-continue-text'>Kontynuuj</Text></button>
             </a>
             <a href='account-info.html#/moje-konto'>
             <button id='payment-btn-cancel'><Text className='payment-buttons-text' id='payment-cancel-text'>Anuluj</Text></button>
@@ -33,4 +35,4 @@ function PasswordBackground(){
         </div>
     );
 }
-export default PasswordBackground
+export default RestrictionsBackground

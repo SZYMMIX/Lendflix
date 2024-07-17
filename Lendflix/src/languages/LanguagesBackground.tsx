@@ -1,6 +1,7 @@
 import { Icon, Text } from '@fluentui/react';
 
-function PasswordBackground(){
+function LanguagesBackground(){
+    const currentUserData = JSON.parse(localStorage.getItem('currentUser'));
     return(
         <div className='password-container'>
         <div className='payment-back-button-container'>
@@ -13,13 +14,14 @@ function PasswordBackground(){
         </div>
         <div className='password-change-container'>
             <div className='giftcard-texts-container'>
-        <Text className='payment-page-title-tremendous'>Zmień hasło</Text>
-        <Text className='payment-page-title-small'>Zabezpiecz konto niepowtarzalnym hasłem liczącym co najmniej 6 znaków.</Text>
+        <Text className='languages-page-title-tremendous'>Ustaw preferencje językowe</Text>
+        <div className='pemail-userdata-container'>
+        <Text className='pemail-page-title-small'>Dla:  {currentUserData[0]}</Text>
+        <img src={`/src/assets/default-img-${currentUserData[1]}.jpg`} className="languages-img"/>
+        </div>
         </div>
         <div className='password-page-inputs'>
-        <input type='password' placeholder='Bieżące hasło' minLength={6} maxLength={60} required/>
-        <input type='password' placeholder='Nowe hasło (6-60 znaków)' minLength={6} maxLength={60} required/>
-        <input type='password' placeholder='Wprowadź ponownie nowe hasło' minLength={6} maxLength={60} required/>
+        <input type='password' id='languages-input' placeholder='Język' minLength={6} maxLength={60} required/>
         </div>
         <div className='payment-buttons-container'>
             <a>
@@ -33,4 +35,4 @@ function PasswordBackground(){
         </div>
     );
 }
-export default PasswordBackground
+export default LanguagesBackground
