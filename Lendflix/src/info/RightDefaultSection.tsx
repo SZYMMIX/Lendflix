@@ -14,7 +14,7 @@ function RightDefaultSection({ChangeRight2, ChangeRight4}){
             <Text className="info-right-option-text" id='plan-title'>Plan Premium </Text> 
             <Text className="info-right-option-text" id='plan-text'>Termin następnej płatności: 28 lipca 2024</Text>
             <span className='credit-card-info'>
-            <img src='./src/assets/creditcard.png' className='payment-card-img'/>
+            <img src='./src/assets/creditcard.png' className='payment-card-img' alt="Karta kredytowa: "/>
             <Text className='credit-card-info-text'>•••• •••• •••• 7453</Text>
             </span>
             </li>

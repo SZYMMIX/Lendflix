@@ -1644,7 +1644,6 @@ margin-top: 10%;
   color: hsl(0, 0%, 20%);
 }
 .billing-background-container{
-  background-color: #0a66c210;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -1656,10 +1655,14 @@ margin-top: 10%;
   font-weight: 500;
 }
 .billing-membership-first-text{
-  color: #797775;
+  color: #605e5c;
 }
 .billing-membership-text{
   font-size: 1em
+}
+.billing-membership-text-history{
+  font-size: 0.9em;
+  font-weight: 500;
 }
 .billing-membership-container{
   border: 1px solid hsla(30, 2%, 58%, 0.6);
@@ -1683,13 +1686,29 @@ margin-top: 10%;
 .billing-history-titles{
   display: flex;
   flex-direction: row;
-  gap: 80px;
+  gap: 20px;
+}
+.billing-history-texts{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  height: 45px;
+}
+
+#billing2{
+margin-left: 60px;
+margin-right: 120px;
+}
+#billing4{
+  margin-left: 102px;
+  margin-right: 168px;
 }
 .billing-line{
     width: 100%;
     height: 1px;
     background-color: #d2d0ce;
     position: relative;
+    margin-bottom: 3px;
 }
 .payment-page-title-tremendous{
   font-size: 3em;
@@ -1698,6 +1717,16 @@ margin-top: 10%;
 .payment-page-title-small{
 font-size: 1.4em;
 font-weight: 400;
+}
+#billing-text2{
+  width: 200px;
+  margin-right: -72px;
+}
+#billing-text4{
+  margin-right: 48px;
+}
+#billing-text5{
+  margin-right: -20px;
 }
 .password-page-inputs{
 display: flex;
@@ -1975,11 +2004,22 @@ font-weight: 700;
   align-items: center;
   margin-top: 7px;
   margin-left: 1px;
-  
+}
+.credit-card-billing{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 159px;
+  margin-top: -5px;
 }
 .credit-card-info-text{
   font-size: 1em;
   font-weight: 500;
+  color: #605e5c;
+}
+.credit-card-billing-text{
+  font-size: 0.9em;
+  font-weight: 700;
   color: #605e5c;
 }
 #membership-page-btn{
@@ -2067,6 +2107,136 @@ font-weight: 700;
     font-size: 1.6em;
     font-weight: 600;
   }
+  .restrict-page-title{
+    font-size: 1.9em;
+    font-weight: 600;
+  }
+  .restrict-line{
+    width: 600px;
+    height: 1px;
+    background-color: #d2d0ce;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .restrict-container{
+    display: flex;
+    width: 59%;
+    height: 800px;
+    justify-content: space-between;
+  }
+  .restrict-change-container{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    margin-top: 6%;
+    }
+.restrict-page-inputs input{
+  width: 75%;
+  height: 30%;
+  padding: 10px 15px;
+  background-color: #edebe9;
+  border: 1px solid hsla(30, 4%, 69%, 0.7);
+  font-size: 1.3em;
+  border-radius: 4px;
+  }
+.restrict-buttons-container{
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  }
+.restrict-buttons-container button{
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  width: 81%;
+}
+.restrict-buttons-container button:hover{
+  cursor: pointer;
+}
+.restrict-buttons-text{
+  font-size: 1.5em;
+}
+#restrict-specific-text{
+  width: 400px;
+}
+.restrict-hidden-texts-container{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.hidden-text-pegi-container{
+  position: relative;
+  bottom: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.watch-background{
+  display: flex;
+  justify-content: center;
+}
+.watch-page-title{
+  font-size: 2em;
+  font-weight: 500;
+  color: #484644;
+}
+.history-page-container{
+width: 1000px;
+margin-top: 30px;
+margin-bottom: 50px;
+}
+.watch-user-info-container{
+  display: flex;
+  justify-content: space-between;
+}
+.watch-img{
+  height: 50px;
+}
+.watch-history-options{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+.watch-up-line{
+  width: 1px;
+  height: 20px;
+  background-color: #d2d0ce;
+}
+.watch-page-text{
+  font-size: 1em;
+  user-select: none;
+  font-weight: 500;
+  color: #484644f1;
+}
+.watch-line{
+  height: 1px;
+  width: 1000px;
+  background-color: #d2d0ce;
+  margin-bottom: 15px;
+}
+.history-info-element{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.watch-remove-icon{
+  scale: 1.5;
+  margin-right: 7px;
+  color: #484644;
+  user-select: none;
+}
+.watch-date-title-container{
+  display: flex;
+  flex-direction: row;
+  gap: 27px;
+  margin-left: 7px;
+}
 
 
 

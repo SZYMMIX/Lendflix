@@ -33,7 +33,7 @@ function LockBackground(){
         </div>
         <div className='payment-buttons-container'>
             <a>
-            <button id='payment-btn-continue'><Text className='payment-buttons-text' id='payment-continue-text' onClick={() => setIsContinueClicked(true)}>
+            <button id='payment-btn-continue' onClick={() => setIsContinueClicked(true)}><Text className='payment-buttons-text' id='payment-continue-text' >
             {isContinueClicked ? 'Zapisz' : 'Kontynuuj'}
                 </Text></button>
             </a>
