@@ -770,7 +770,7 @@ margin-left: 80px;
   height: 190px;
   display: flex;
   border-radius: 4px;
-  transition: scale 0.4s ease, filter 0.4s ease;
+  transition: filter 0.4s ease;
 }
 .movie-image-container{
   box-sizing: border-box;
@@ -779,10 +779,14 @@ margin-left: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  transition: scale 0.5s ease;
+}
+.movie-tile-wrapper {
+  position: relative; 
 }
 
 .movie-image-container:hover .movie-tile-image{
-  scale: 1.15;
   cursor: pointer;
 }
 .movie-image-container:active .movie-tile-image{
@@ -981,8 +985,8 @@ cursor: pointer;
   margin-top: 7px;
 }
 #mockimg {
-  width: 100px; /* Same as the class width */
-  height: 70px; /* Same as the class height */
+  width: 100px;
+  height: 70px; 
 }
 
 .notifications-hidden-div-text{
@@ -1877,7 +1881,7 @@ font-weight: 700;
   font-size: 1.2em;
   font-weight: 500;
   color: black;
-  width: 70%;
+  width: 550px;
 }
 #email-page-box-container{
   margin-top: 7%;
@@ -1959,7 +1963,7 @@ font-weight: 700;
     }
     .email-container{
       display: flex;
-      width: 82%;
+      width: 1720px;
       height: 800px;
       justify-content: space-between;
     }
@@ -1969,7 +1973,7 @@ font-weight: 700;
       gap: 30px;
       }
       .email-page-inputs input{
-        width: 65%;
+        width: 450px;
         height: 30%;
         padding: 10px 15px;
         background-color: #edebe9;
@@ -1986,7 +1990,7 @@ font-weight: 700;
         padding: 10px 15px;
         border: none;
         border-radius: 3px;
-        width: 68.6%;
+        width: 483px;
       }
       .email-buttons-container button:hover{
         cursor: pointer;
@@ -2237,8 +2241,54 @@ margin-bottom: 50px;
   gap: 27px;
   margin-left: 7px;
 }
-
-
+.watch-like-icon{
+  scale: 1.8;
+  margin-right: 7px;
+  color: #201f1e;
+  user-select: none;
+}
+.dislike-icon{
+  transform: rotateY(180deg);
+}
+.like-icon{
+  transform: rotateX(360deg);
+}
+.likes-container{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.history-blue-text{
+  color: #0389ff;
+}
+.history-blue-text:hover{
+  text-decoration: underline #0389ff;
+}
+.movie-tile-hovered-container{
+  background-color: #1b1a19;
+  width: 150px;
+  height: 190px;
+  position: absolute;
+  left: 100%;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 5px;
+}
+.image-container-hovered{
+  scale: 1.2;
+  z-index: 20;
+}
+#left-tile{
+  right: 100%;
+}
+#tile-hidden{
+opacity: 0;
+transition: opacity 0.6s ease;
+box-shadow: none;
+}
+#tile-visible:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
 
 
 
