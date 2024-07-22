@@ -186,7 +186,7 @@ useEffect(() => {
               </a>
               </li>
               <li >
-              <a href='account-info.html#/wypożyczenia' className='unfold-profiles-list-item'>
+              <a href='account-info.html#/wypozyczenia' className='unfold-profiles-list-item'>
               <Icon iconName="ShoppingCart" className='unfold-profiles-icon' />
               <Text className='unfold-profiles-manage-text'>Moje zakupy</Text>
               </a>

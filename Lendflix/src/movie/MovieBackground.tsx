@@ -1,4 +1,4 @@
-import { Text } from '@fluentui/react'
+import { Text, Icon } from '@fluentui/react'
 
 function MovieBackground(){
     var clickedMovie = JSON.parse(localStorage.getItem('clickedMovie'));
@@ -7,7 +7,10 @@ function MovieBackground(){
             <div className='movie-page-tile-container'>
              <img src={`./src/assets/${clickedMovie[0]}.jpg`} alt={`${clickedMovie[0]}`} 
          className='movie-page-tile-image'  />
+         <div className='title-watch-btn-container'>
          <Text className='movie-page-tile-text'>{clickedMovie[0]}</Text>
+         <Icon iconName='MSNVideos' className='watch-movie-icon'/>
+         </div>
          <div className='movie-page-info-container'>
          <Text className='movie-page-info-text'>USA</Text>
          <div className='movie-info-line'/>

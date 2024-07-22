@@ -1,20 +1,22 @@
 import InfoHeader from "./InfoHeader";
-import { HashRouter as Router, Route, Routes} from "react-router-dom";
+import { HashRouter as Router, Route, Routes, useLocation} from "react-router-dom";
 import LeftSection from "./LeftSection";
 import RightDefaultSection from "./RightDefaultSection";
 import InfoFooter from "./InfoFooter";
 import Profiles from "./Profiles";
 import Security from "./Security";
 import Payment from "./Payment";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Shopping from "./Shopping";
 
 function InfoScript(){
-    const [isActive1, setIsActive1] = useState(true);
-    const [isActive2, setIsActive2] = useState(false);
-    const [isActive3, setIsActive3] = useState(false);
-    const [isActive4, setIsActive4] = useState(false);
-    const [isActive5, setIsActive5] = useState(false);
+    const [isActive1, setIsActive1] = useState();
+    const [isActive2, setIsActive2] = useState();
+    const [isActive3, setIsActive3] = useState();
+    const [isActive4, setIsActive4] = useState();
+    const [isActive5, setIsActive5] = useState();
+
+   
     function ChangeRight1(){
         if (!isActive1)  setIsActive1(!isActive1);
         if(isActive2 || isActive3 || isActive4 || isActive5){
@@ -77,10 +79,10 @@ function InfoScript(){
         <Routes>
         <Route path="/" element={<RightDefaultSection ChangeRight2={ChangeRight2} ChangeRight4={ChangeRight4}/>}/>
         <Route path="/moje-konto" element={<RightDefaultSection ChangeRight2={ChangeRight2} ChangeRight4={ChangeRight4}/>}/>
-        <Route path="/członkostwo" element={<Payment/>}/>
+        <Route path="/czlonkostwo" element={<Payment/>}/>
         <Route path="/ochrona" element={<Security/>}/>
         <Route path="/profile" element={<Profiles/>}/>
-        <Route path="/wypożyczenia" element={<Shopping/>}/>
+        <Route path="/wypozyczenia" element={<Shopping/>}/>
         </Routes>
         </div>
         <InfoFooter/>

@@ -1259,7 +1259,7 @@ list-style-type:none;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 4%;
-  min-height: 600px;
+  min-height: 700px;
 }
 #info-footer{
   background-color: hsla(0, 0%, 100%, 0.4);
@@ -2285,7 +2285,6 @@ margin-bottom: 50px;
 }
 .left-tile{
   right: 100%;
-
 }
 #tile-hidden{
 opacity: 0;
@@ -2427,6 +2426,32 @@ top: 2px;
 }
 .lend-history-text{
   font-size: 1.2em;
+}
+.title-watch-btn-container{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+}
+.watch-movie-icon{
+  color: #edebe9;
+  scale: 2;
+  position: relative;
+  top: 1px;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+.watch-movie-icon:hover{
+  color: #d2d0ce; 
+}
+.watch-movie-icon:active{
+  color: #bebbb8;
+}
+#lend-page-title{
+  margin-bottom: 25px;
+}
+.lend-page-history-text{
+  width: 200px;
 }
 
 

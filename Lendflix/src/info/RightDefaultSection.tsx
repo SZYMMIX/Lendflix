@@ -21,7 +21,7 @@ function RightDefaultSection({ChangeRight2, ChangeRight4}){
             <div className="right-info-line"></div>
           
             <li>
-            <Link to="/członkostwo" onClick={ChangeRight2} className="right-info-default-link">
+            <Link to="/czlonkostwo" onClick={ChangeRight2} className="right-info-default-link">
             <span>
             <ContactCardRegular className="info-right-option-icon"/>
             <Text className="info-right-option-text">Zarządzaj członkostwem</Text>
