@@ -19,8 +19,33 @@ function showNotifications(){
   if(notificationsCount>0) setNotificationsCount(0);
 }
 
-function HandleAnchorClick(){
+function HandleAnchorClick1(){
   const currentUser = ['User 1', '1'];
+  localStorage.setItem('currentUser', JSON.stringify(currentUser))
+  currentUserDataList = JSON.parse(localStorage.getItem('currentUser'))
+}
+function HandleAnchorClick2(){
+  const currentUser = ['User 2', '2'];
+  localStorage.setItem('currentUser', JSON.stringify(currentUser))
+  currentUserDataList = JSON.parse(localStorage.getItem('currentUser'))
+}
+function HandleAnchorClick3(){
+  const currentUser = ['User 3', '3'];
+  localStorage.setItem('currentUser', JSON.stringify(currentUser))
+  currentUserDataList = JSON.parse(localStorage.getItem('currentUser'))
+}
+function HandleAnchorClick4(){
+  const currentUser = ['User 4', '4'];
+  localStorage.setItem('currentUser', JSON.stringify(currentUser))
+  currentUserDataList = JSON.parse(localStorage.getItem('currentUser'))
+}
+function HandleAnchorClick5(){
+  const currentUser = ['User 5', '1'];
+  localStorage.setItem('currentUser', JSON.stringify(currentUser))
+  currentUserDataList = JSON.parse(localStorage.getItem('currentUser'))
+}
+function HandleAnchorClick6(){
+  const currentUser = ['User 6', '2'];
   localStorage.setItem('currentUser', JSON.stringify(currentUser))
   currentUserDataList = JSON.parse(localStorage.getItem('currentUser'))
 }
@@ -119,37 +144,37 @@ useEffect(() => {
         {isProfileHover && <div className="hidden-div" onMouseEnter={() => setIsProfileHover(true)} onMouseLeave={() => setIsProfileHover(false)}>
           <ul>
             <li>
-              <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna" id='unfold-li1' onClick={HandleAnchorClick}>
+              <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna" id='unfold-li1' onClick={HandleAnchorClick1}>
               <img src="/src/assets/default-img-1.jpg" className='menu-profile-hidden-div-image'/>
               <Text className='unfold-profiles-username-text'>User1</Text>
               </a>
               </li>
             <li>
-            <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna">
+            <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna" onClick={HandleAnchorClick2}>
               <img src="/src/assets/default-img-2.jpg" className='menu-profile-hidden-div-image'/>
               <Text className='unfold-profiles-username-text'>User2</Text>
               </a>
               </li>
             <li>
-            <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna">
+            <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna" onClick={HandleAnchorClick3}>
               <img src="/src/assets/default-img-3.jpg" className='menu-profile-hidden-div-image'/>
               <Text className='unfold-profiles-username-text'>User3</Text>
               </a>
               </li>
             <li>
-            <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna">
+            <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna" onClick={HandleAnchorClick4}>
               <img src="/src/assets/default-img-4.jpg" className='menu-profile-hidden-div-image'/>
               <Text className='unfold-profiles-username-text'>User4</Text>
               </a>
               </li>
             <li>
-            <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna">
+            <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna" onClick={HandleAnchorClick5}>
               <img src="/src/assets/default-img-1.jpg" className='menu-profile-hidden-div-image'/>
               <Text className='unfold-profiles-username-text'>User5</Text>
               </a>
               </li>
             <li>
-            <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna">
+            <a className='unfold-profiles-list-item' href="./menu.html#/strona-główna" onClick={HandleAnchorClick6}>
               <img src="/src/assets/default-img-2.jpg" className='menu-profile-hidden-div-image'/>
               <Text className='unfold-profiles-username-text'>User6</Text>
               </a>
