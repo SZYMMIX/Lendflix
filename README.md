@@ -1,3 +1,3 @@
 # Lendflix
  
-A project that I am currently working on during my internship
+A film rental website
