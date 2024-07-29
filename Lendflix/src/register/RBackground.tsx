@@ -36,10 +36,10 @@ function RBackground(){
             <div className='forgot-password-container'>
             </div>
             <div className='newsletter-container'>
-                <label className='checkbox' for="checkboxInput-register" id='register-label'>
-                <input type='checkbox' className='checkbox-input' id='checkboxInput-register'/>
-                <div className='checkbox-box'></div>
-                </label>
+            <label className='checkbox' for="checkboxInput-register" id='register-label'>
+            <input type='checkbox' className='checkbox-input' id='checkboxInput-register'/>
+            <div className='checkbox-box'></div>
+            </label>
             <div id='newsletter-text-container'>
             <Text className='start-text1' id='newsletter-text'>Nie chcę otrzymywać ofert specjalnych z serwisu Lendflix</Text>
             </div>

@@ -1,12 +1,9 @@
 import * as React from 'react';
-//import {MockData} from './../model/mock-data';
-//import {data} from './../mock.json';
-
 
 function Header (){
   return (
     <header className="header" id='index-header'>
-    <div className="logo" id='index-logo'>
+    <div className="logo-container" id='index-logo'>
       <img src={"./src/assets/lendflixlogo.png"} alt="Netflix" className='lendflix-logo' id='lendflix-logo'/>
     </div>
     <div className="actions">

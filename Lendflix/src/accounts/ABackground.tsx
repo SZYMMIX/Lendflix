@@ -17,12 +17,6 @@ function ABackground(){
                           ];
      const profilesList = profiles.map(profile => <Profile name={profile.name}
                                        imageId={profile.imageId} isEditing={isEditing}/>)
-     function EditProfile():void{
-      setIsEditing(true);
-     }
-     function FinishedProfile():void{
-      setIsEditing(false);
-     }
 return(
 <div className="accounts-background">
     <div className="account-text-container">
@@ -33,9 +27,9 @@ return(
       </div>
       <div id="edit-profile-container">
         {!isEditing ? (<button id="edit-profile-button" 
-                      onClick={EditProfile}>Edytuj profil</button>):
+                      onClick={() => setIsEditing(true)}>Edytuj profil</button>):
                       (<button id="finished-button"  
-                      onClick={FinishedProfile}>Gotowe</button>)}
+                      onClick={() => setIsEditing(false)}>Gotowe</button>)}
       
       
       </div>
