@@ -1,6 +1,6 @@
 # Lendflix
  
-A film rental website
+A film rental website *will be finished in the future*
 
 cd ./Lendflix
 
